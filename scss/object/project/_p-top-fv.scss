@@ -1,0 +1,33 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-top-fv {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgb(80 80 80 / 50.2%);
+  }
+
+  &__contents {
+    position: absolute;
+    top: 39.36%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    z-index: 9998;
+    font-size: 4rem;
+    line-height: calc(60 / 40);
+    font-weight: 700;
+
+    @include sp {
+      top: 37.82%;
+      font-size: 3rem;
+      line-height: calc(50 / 30);
+    }
+  }
+}

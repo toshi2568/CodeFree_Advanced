@@ -1,0 +1,12 @@
+@use '../foundation/variable' as *;
+@use '../foundation/mixin' as *;
+
+.l_inner {
+  width: 88rem;
+  margin: 0 auto;
+
+  @include sp {
+    width: 100%;
+    max-width: 500px;
+  }
+}

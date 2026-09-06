@@ -1,0 +1,20 @@
+
+
+// resetの読み込み
+@use './foundation/reset';
+
+// baseの読み込み
+@use './foundation/base';
+
+// layoutの読み込み
+@use './layout/l-header';
+@use './layout/l-footer';
+@use './layout/l-inner';
+
+// projectの読み込み
+@use './object/project/p-header';
+@use './object/project/p-top-fv';
+@use './object/project/p-top-concept';
+@use './object/project/p-top-message';
+@use './object/project/p-top-reason';
+@use './object/project/p-top-voice';
