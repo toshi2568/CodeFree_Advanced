@@ -4,25 +4,244 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>きたむらミュージックスクール</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <div id="container">
-    <header>
-      <div class="header">
-        <p>テスト</p>
-      </div>
 
+    <header class="header">
+      <div class="l-header">
+        <div class="l_inner p-header">
+          <h1 class="p-header__logo">
+            <a href="./index.html">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./img/logo-sp.png">
+                <img src="./img/logo.png" alt="きたむらミュージックスクールのロゴ">
+              </picture>
+            </a>
+          </h1>
+
+          <!-- pcナビ -->
+          <div class="p-header__right">
+            <ul class="p-header__nav">
+              <li>
+                <a href="plan.html">料金</a>  
+              </li>
+              <li>
+                <a href="blog-list.html">ブログ</a>  
+              </li>
+              <li>
+                <a href="result-list.html">卒業実績</a>  
+              </li>
+            </ul>
+            <a href="" class="p-header__contact">お問い合わせ</a>
+          </div>
+
+          <!-- ハンバーガーナビゲーション -->
+          <div class="p-header__menu">
+            <nav>
+              <ul>
+                <li>
+                  <a href="plan.html">料金</a>
+                </li>
+                <li>
+                  <a href="blog-list.html">ブログ</a>
+                </li>
+                <li>
+                  <a href="result-list.html">卒業実績</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- ハンバーガーボタン -->
+        <button class="hamburger" id="js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
+
     <main>
       <div class="main">
-        <p>メインコンテンツ</p>
+
+        <!-- fv -->
+        <div class="p-top-fv">
+          <div class="p-top-fv__bg-image">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./img/FV-sp.jpg">
+              <img src="./img/FV.jpg" alt="女性がギターを弾いている">
+            </picture>
+          </div>
+          <div class="p-top-fv__contents">
+            <h2>「音楽で生きる」<br class="sp">を叶える<br>ミュージックスクール</h2>
+          </div>
+        </div>
+
+        <!-- concept -->
+        <div id="concept" class="p-top-concept">
+          <h2 class="p-top-concept__title">全人類、<br class="sp">ミュージシャン計画。</h2>
+          <p class="p-top-concept__text">私たちは音楽を愛するすべての人が、音<br class="sp">楽に熱狂できる世界を目指しています。</p>
+          <picture class="p-top-concept__image">
+            <source media="(max-width: 767px)" srcset="./img/semicircle-sp.jpg">
+            <img src="./img/semicircle.jpg" alt="女性がギターを弾いている">
+          </picture>
+          <div class="p-top-concept__steps">
+            <div class="p-top-concept__step-en">
+              <p class="p-top-concept__step-en-item">
+                Enthusiasm
+              </p>
+              <p class="p-top-concept__step-en-item">
+                Envision
+              </p>
+              <p class="p-top-concept__step-en-item">
+                Effulgent
+              </p>
+            </div>
+            <div class="p-top-concept__step-arrow">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./img/arrow-sp.png">
+                <img src="./img/arrow.png" alt="ステップの矢印">
+              </picture>
+            </div>
+            <div class="p-top-concept__step-ja">
+              <p class="p-top-concept__step-ja-item">
+                熱狂し
+              </p>
+              <p class="p-top-concept__step-ja-item">
+                想像し
+              </p>
+              <p class="p-top-concept__step-ja-item">
+                輝く存在へ
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- message -->
+        <div id="message" class="p-top-message">
+          <h2 class="p-top-message__title">
+            音楽業界初！<br>収益化までサポートする<br class="sp">ミュージックスクール
+          </h2>
+          <div class="p-top-message__text">
+            楽器や作詞作曲などの<br class="sp">技術・知識はもちろんのこと<br>自分で稼ぎつづけるための<br class="sp">ビジネス面もサポートします！
+          </div>
+        </div>
+
+        <!-- reason -->
+        <div id="reason" class="p-top-reason">
+          <div class="l_inner">
+            <h2 class="p-top-reason__title">
+              きたむらミュージック<br class="sp">スクールが選ばれる理由
+            </h2>
+
+            <div class="p-top-reason__items">
+
+              <div class="p-top-reason__item p-top-reason-item js-fade">
+                <div class="p-top-reason__item-image">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="./img/reason01-sp.jpg">
+                    <img src="./img/reason01.jpg" alt="犬を抱いている男性">
+                  </picture>
+                </div>
+                <div class="p-top-reason__item-textarea">
+                  <div class="p-top-reason__item-title">
+                    <h3>技術面はプロによるマンツーマン授業！</h3>
+                  </div>
+                  <div class="p-top-reason__item-text">
+                    <p>第一線で活躍するプロによるマンツーマン授業で、きめ細<br class="pc">かな技術指導が受けられます。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-top-reason__item p-top-reason-item js-fade">
+                <div class="p-top-reason__item-image">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="./img/reason02-sp.jpg">
+                    <img src="./img/reason02.jpg" alt="犬を抱いている男性">
+                  </picture>
+                </div>
+                <div class="p-top-reason__item-textarea">
+                  <div class="p-top-reason__item-title">
+                    <h3>収益化するためのビジネスサポート！</h3>
+                  </div>
+                  <div class="p-top-reason__item-text">
+                    <p>コンセプト設計や集客方法、マーケティングリサーチな<br class="pc">ど、音楽で稼ぎつづけるための方法やマインドセットをサ<br class="pc">ポートするクラスをご用意。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-top-reason__item p-top-reason-item js-fade">
+                <div class="p-top-reason__item-image">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="./img/reason03-sp.jpg">
+                    <img src="./img/reason03.jpg" alt="犬を抱いている男性">
+                  </picture>
+                </div>
+                <div class="p-top-reason__item-textarea">
+                  <div class="p-top-reason__item-title">
+                    <h3>24時間365日使える練習ROOMを完備！</h3>
+                  </div>
+                  <div class="p-top-reason__item-text">
+                    <p>一年中使える個室の練習ROOMを完備しているため、お仕<br class="pc">事帰りや合間の時間も自由に練習が可能です。（アプリで<br class="pc">予約が必要です）</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- voice -->
+        <section id="voice" class="p-top-voice">
+          <div class="l_inner">
+            <h2 class="p-top-voice__title">生徒さんたちの声</h2>
+
+            <div class="p-top-voice__swiper swiper">
+              <div class="p-top-voice__swiper-wrapper swiper-wrapper">
+
+                <article class="p-top-voice__item swiper-slide">
+                  <img src="img/voice01.jpg" alt="マイクで歌う男性">
+                  <h3>証券会社勤務　丸山さん</h3>
+                  <p>昔やっていた音楽活動で、副収入が得られるようになったので、毎日充実するようになりました。</p>
+                </article>
+
+                <article class="p-top-voice__item swiper-slide">
+                  <img src="img/voice02.jpg" alt="犬を可愛がる女性">
+                  <h3>IT会社勤務　S.Eさん</h3>
+                  <p>プロの指導が受けられるので、技術が確実に上がるし、音楽への考え方とかも勉強できて最高です。</p>
+                </article>
+
+                <article class="p-top-voice__item swiper-slide">
+                  <img src="img/voice03.jpg" alt="ギターを弾く男性">
+                  <h3>都内大学生　田森さん</h3>
+                  <p>就職する前にビジネスの事が学べるし、好きな音楽で稼げるようになったので選択肢が増えました。</p>
+                </article>
+
+              </div>
+            </div>
+
+            <!-- 左矢印 -->
+            <button class="p-top-voice__prev" type="button">
+              <img src="./img/arrow-l.png" alt="左矢印">
+            </button>
+
+            <!-- 右矢印 -->
+            <button class="p-top-voice__next" type="button">
+              <img src="./img/arrow-r.png" alt="右矢印">
+            </button>
+
+          </div>  
+        </section>
       </div> 
     </main>
     <footer>
       <div class="footer">
-        <p>フッター</p>
       </div>
     </footer> 
   </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>

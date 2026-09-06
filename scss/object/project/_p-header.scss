@@ -1,0 +1,179 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+
+  @include sp {
+    position: relative;
+    height: 50px;
+  }
+
+  &__logo {
+    a {
+      height: 8rem;
+      display: flex;
+      align-items: center;
+      transition: opacity 0.4s;
+
+      @include sp {
+        height: 50px;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    img {
+      width: 19.2rem;
+      height: 5.126rem;
+
+      @include sp {
+        width: 20.863rem;
+        height: 3.129rem;
+        margin-left: 2rem;
+      }
+    }
+
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    column-gap: 3.3rem;
+    
+    li {
+      a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 1.7rem;
+        font-weight: 700;
+        height: 8rem;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 2.45rem;
+          width: 100%;
+          height: 1px;
+          background: #000;
+          transform: scaleX(0);
+          transition: transform 0.4s;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+        }
+      }
+    }
+    @include sp {
+      display: none;
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    column-gap: 3.3rem;
+  }
+  &__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 4.5rem;
+    background: $color-red;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: calc(33 / 15);
+    font-weight: 700;
+
+    @include sp {
+      display: none;
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+
+  @include sp {
+    position: absolute;
+    display: block;
+    width: 71px;
+    height: 50px;
+    right: 0;
+    top: 0;
+    background-color: $color-red;
+    margin-left: auto;
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 32.72px;
+      height: 4px;
+      background: #fff;
+      border-radius: 9999px;
+      transition: 0.4s;
+    }
+    span:nth-child(1) {
+      transform: translate(-50%, calc(-50% - 10px));
+    }
+    span:nth-child(3) {
+      transform: translate(-50%, calc(-50% + 10px));
+    }
+
+    &.is-active {
+
+      span:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      span:nth-child(2) {
+        opacity: 0;
+      }
+
+      span:nth-child(3) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+  }
+}
+
+/* ハンバーガーナビゲーション（中身） */
+.p-header__menu {
+  position: fixed;
+  width: 30rem;
+  top: 5rem;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  transform: translateX(100%);
+  transition: transform 0.4s;
+
+  ul {
+    margin: 0;
+    list-style: none;
+    font-size: 18px;
+
+    li {
+      padding-left: 20px;
+      height: 5.8rem;
+      line-height: calc(33 /18);
+      background: $color-red;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &.is-open {
+    transform: translateX(0);
+  }
+}

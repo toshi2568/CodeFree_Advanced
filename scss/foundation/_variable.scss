@@ -1,0 +1,8 @@
+
+$font-Gothic: "Yu Gothic", "YuGothic", sans-serif;
+
+$color-red: #CB0000;
+
+@function vw($pixelSize, $baseWidth: 940) {
+  @return calc($pixelSize / $baseWidth * 100vw);
+}
