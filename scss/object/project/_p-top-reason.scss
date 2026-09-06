@@ -1,0 +1,93 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-top-reason {
+  padding: 6.4rem 0 9.3rem;
+
+  @include sp {
+    padding: 4.9rem 2rem 3.9rem;
+  }
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    line-height: calc(50 / 30);
+    font-weight: 700;
+    margin-bottom: 2.8rem;
+
+    @include sp {
+      font-size: 2.5rem;
+      line-height: calc(40 / 25);
+      margin-bottom: 3.6rem;
+    }
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4.7rem;
+
+    @include sp {
+      row-gap: 3.9rem;
+    }
+  }
+  &__item {
+    display: flex;
+    column-gap: 5rem;
+
+    @include sp {
+      flex-direction: column;
+    //   row-gap: 3.9rem;
+      column-gap: 0;
+    }
+  }
+  &__item-image {
+    aspect-ratio: 350 / 247;
+    width: vw(350, 1080);
+
+    @include sp {
+      aspect-ratio: 335 / 200;
+      width: 100%;
+    }
+  }
+  &__item-title {
+    position: relative;
+    font-size: 2.2rem;
+    line-height: (33 / 22);
+    font-weight: 700;
+    margin-bottom: 4.9rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -5rem;
+      bottom: -1.2rem;
+      width: calc(100% + 6.2rem);
+      height: 0.2rem;
+      background-color: $color-red;
+    }
+
+    @include sp {
+      font-size: 2rem;
+      line-height: calc(30 / 20);
+      margin-bottom: 0;
+      margin-top: 3rem;
+
+      &::after {
+        left: 0;
+        bottom: -0.8rem;
+        width: 100%;
+      }
+    }
+  }
+  &__item-text {
+    line-height: calc(33 / 18);
+
+    @include sp {
+      font-size: 1.6rem;
+      line-height: calc(30 / 16);
+      margin-top: 2.7rem;
+    }
+  }
+
+  
+}
+
