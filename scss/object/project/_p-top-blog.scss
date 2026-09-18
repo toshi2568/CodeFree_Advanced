@@ -1,0 +1,72 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-top-blog {
+  padding: 7.045rem 0 20.3rem;
+    @include sp {
+        padding: 4.6rem 2rem 19rem;
+    }
+
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    line-height: calc(45 / 30);
+    font-weight: 700;
+    margin-bottom: 3.8rem;
+
+    @include sp {
+      font-size: 2.5rem;
+      line-height: calc(40 /25);
+      margin-bottom: 3.9rem;
+    }
+  }
+  &__items {
+    display: flex;
+    column-gap: 5rem;
+
+    @include sp {
+      row-gap: 4.1rem;
+      flex-direction: column;
+    }
+  }
+  &__item-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 260 / 200;
+    margin-bottom: 2rem;
+
+    @include sp {
+      aspect-ratio: 335 / 200;
+      margin-bottom: 3.1rem;
+    }
+  }
+  &__item-title {
+    font-size: 2rem;
+    line-height: calc(25 / 20);
+    font-weight: 700;
+    margin-bottom: 1.1rem;
+
+    @include sp {
+      font-size: 2rem;
+      line-height: calc(30 / 20);
+      margin-bottom: 0.5rem;
+    }
+  }
+  &__item-date {
+    font-size: 1.7rem;
+    line-height: calc(30 / 17);
+    text-align: right;
+  }
+  &__link {
+    display: inline-block;
+    text-decoration: underline;
+    margin-top: 3.7rem;
+  }
+  &__link-wrap {
+    text-align: right;
+
+    @include sp {
+      text-align: center;
+    }
+  }
+}

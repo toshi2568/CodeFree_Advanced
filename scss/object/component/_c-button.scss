@@ -1,0 +1,103 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+
+.p-top-contact {
+  text-align: center;
+  margin-top: 9.5rem;
+  @include sp {
+    padding-inline: 2rem;
+    margin-top: 10.2rem;
+  }
+}
+.c-contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  border: 0.1rem solid $color-red;
+  width: 30rem;
+  height: 6rem;
+  font-size: 2rem;
+  line-height: calc(33 / 20);
+  font-weight: 700;
+  background-color: $color-red;
+  letter-spacing: 0.4rem;
+  color: #fff;
+  transition: all 0.4s ease;
+
+  @include sp {
+    width: 100%;
+    line-height: calc(33 / 20);
+    letter-spacing: 0.2rem;
+  }
+
+  &:hover {
+    background-color: #fff;
+    color: $color-red;
+  }
+}
+
+.p-fixed-buttons {
+  position: fixed;
+  right: 0rem;
+  bottom: 0rem;
+  z-index: 1000;
+
+  opacity: 0;
+  visibility: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: opacity 0.4s, visibility 0.4s ease;
+
+  @include sp {
+    width: 100%;
+    padding-inline: 2rem;
+  }
+  
+  &__top {
+    margin-right: 11.6rem;
+    margin-bottom: 3.1rem;
+
+    @include sp {
+      margin-right: 0rem;
+      margin-bottom: 1.9rem;
+    }
+
+    img {
+      display: block;
+      width: 6.8rem;
+      height: 6.8rem;
+    }
+  }
+  &.is-show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+// .page-top {
+//   position: fixed;
+//   right: 11.6rem;
+//   bottom: 36.5rem;
+//   z-index: 100;
+
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: opacity 0.4s;
+// }
+
+// .page-top img {
+//   width: 6.8rem;
+//   height: 6.8rem;
+// }
+
+.p-fixed-buttons.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.p-fixed-buttons.is-show:hover {
+  opacity: 0.7;
+}
