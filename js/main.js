@@ -45,3 +45,59 @@ $(".p-top-voice__next").click(function() {
 
   $(".p-top-voice__swiper-wrapper").append(firstItem);
 });
+
+// アコーディオンの開閉
+$(".p-top-faq__question").on("click", function() {
+  $(this)
+    .next(".p-top-faq__answer")
+    .slideToggle();
+
+  $(this).toggleClass("is-open");
+
+  const $arrow = $(this).find(".p-top-faq__question-arrow");
+
+  if ($(this).hasClass("is-open")) {
+    $arrow.attr("src", "./img/faq-up-arrow.png");
+  } else {
+    $arrow.attr("src", "./img/faq-down-arrow.png");
+  }
+});
+
+//ページトップへ戻るボタンの表示、非表示
+const pageTop = document.querySelector(".p-fixed-buttons");
+
+window.addEventListener("scroll", () => {
+
+  if (window.scrollY > 300) {
+    pageTop.classList.add("is-show");
+  } else {
+    pageTop.classList.remove("is-show");
+  }
+
+});
+
+// ページトップへ戻るボタンの位置調整
+const fixedButtons = document.querySelector(".p-fixed-buttons");
+const footer = document.querySelector("footer");
+
+function adjustFixedButtons() {
+
+  const footerTop = footer.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (footerTop < windowHeight) {
+
+    const footerVisibleHeight = windowHeight - footerTop;
+
+    fixedButtons.style.bottom = `${footerVisibleHeight}px`;
+
+  } else {
+
+    fixedButtons.style.bottom = "0";
+
+  }
+}
+
+window.addEventListener("scroll", adjustFixedButtons);
+
+adjustFixedButtons();

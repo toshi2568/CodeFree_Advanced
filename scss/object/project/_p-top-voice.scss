@@ -1,0 +1,116 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-top-voice {
+  padding: 4.4rem 0rem 8rem;
+  background-color: $color-red;
+  position: relative;
+
+  @include sp {
+    padding: 4.6rem 2rem 5rem;
+  }
+
+  .l_inner {
+    position: relative;
+
+    @media (max-width: 1020px) and (min-width: 768px) {
+      width: calc(100% - 12rem);
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    line-height: calc(50 / 30);
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 3.6rem;
+
+    @include sp {
+      font-size: 2.5rem;
+      line-height: calc(40 /25);
+      margin-bottom: 3.9rem;
+    }
+  }
+
+  &__image {
+    overflow: hidden;
+  }
+
+  &__item {
+    img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 270 / 190;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+
+      &:hover {
+        transform: scale(1.1);
+        opacity: 0.7;
+      }
+
+      @include sp {
+        aspect-ratio: 335 / 200;
+      }
+    }
+    h3 {
+      margin-top: 1.7rem;
+      color: #fff;
+      font-size: 2.2rem;
+      line-height: calc(33 / 22);
+      font-weight: 700;
+      text-align: center;
+
+      @include sp {
+        margin-top: 2.7rem;
+      }
+    }
+    p {
+      margin-top: 1rem;
+      color: #fff;
+      font-size: 1.8rem;
+      line-height: calc(30 / 18);
+    }
+  }
+  &__prev,
+  &__next {
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    width: 3.2rem;
+    height: auto;
+    cursor: pointer;
+    z-index: 10;
+
+    @include sp {
+      top: 51%;
+      width: 3rem;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+  }
+
+  &__prev {
+    left: -4.7rem;
+
+    @include sp {
+      left: 0.5rem;
+    }
+  }
+
+  &__next {
+    right: -5rem;
+
+    @include sp {
+      right: 0.5rem;
+    }
+  }
+}

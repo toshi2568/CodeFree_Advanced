@@ -1,0 +1,106 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-top-faq {
+    @include sp {
+      padding: 2.8rem 2rem 0.2rem;
+  }
+  
+  &__item {
+    border-top: 0.5px solid #000;
+    width: 100%;
+
+    &:last-child {
+      border-bottom: 0.5px solid #000;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    line-height: calc(50 / 30);
+    font-weight: 700;
+    margin-bottom: 3.6rem;
+
+    @include sp {
+      font-size: 2.5rem;
+      line-height: calc(40 /25);
+      margin-bottom: 3.7rem;
+    }
+  }
+  &__question {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2.907rem 1.5rem 1.95rem;
+    font-size: 1.7rem;
+    line-height: calc(30 / 17);
+
+    @include sp {
+      padding: 1.3rem 0rem 0.9rem 0rem;
+      font-size: 1.6rem;
+      line-height: calc(30 / 16);
+    }
+  }
+  &__question-text {
+    width: 77.3rem;
+    margin-top: 0.37rem;
+    margin-left: 0;
+
+    @include sp {
+      width: 23.3rem;
+      margin-right: 1.8rem;
+    }
+  }
+  &__question-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 1rem;
+
+    @include sp {
+      margin-right: 1.8rem;
+    }
+  }
+  &__question-arrow {
+    width: 1.5rem;
+    height: 1.1rem;
+    margin-top: 0.37rem;
+  }
+  &__answer {
+    display: none;
+    background-color: rgba(203, 0, 0, 0.098);
+    padding: 1.5rem 2.907rem 1.5rem 1.95rem;
+
+    @include sp {
+      padding: 1.4rem 0rem 0.8rem 0rem;
+    }
+  }
+  &__answer-inner {
+    display: flex;
+    align-items: center;
+  }
+  &__answer-text {
+    width: 77.3rem;
+    margin-top: 0.37rem;
+    margin-left: 0;
+    font-size: 1.7rem;
+    line-height: calc(30 / 17);
+    color: $color-red;
+    font-weight: 700;
+
+    @include sp {
+      font-size: 1.6rem;
+      line-height: calc(30 / 16);
+      width: 23.3rem;
+      margin-right: 1.8rem;
+    }
+  }
+  &__answer-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 1rem;
+
+    @include sp {
+      margin-right: 1.8rem;
+    }
+  }
+}
