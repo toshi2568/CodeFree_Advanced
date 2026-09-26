@@ -1,0 +1,223 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-plan-table__title {
+	font-size: 2.5rem;
+	line-height: calc(38 / 25);
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 8rem;
+
+	@include sp {
+		margin-bottom: 0.6rem;
+	}
+}
+
+.p-plan-table {
+	.l_inner {
+		@include sp {
+			padding-inline: 2rem;
+			width: 100%;
+			max-width: none;
+			box-sizing: border-box;
+		}
+	}
+
+	&__scroll {
+		@include sp {
+			width: 100%;
+			overflow-x: auto;
+			overflow-y: hidden;
+			padding-top: 3rem;
+
+			// ネイティブのスクロールバーは見えなくてもOK
+			scrollbar-width: none;
+
+			&::-webkit-scrollbar {
+        display: none;
+			}
+		}
+	}
+
+	&__bar {
+		display: none;
+
+		@include sp {
+			display: block;
+			width: 100%;
+			height: 2.5rem;
+			background-color: rgba(80, 80, 80, 0.15);
+			position: relative;
+			margin-top: 1.7rem;
+		}
+	}
+
+	&__bar-thumb {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 10rem;
+		background-color: rgba(80, 80, 80, 0.25);
+	}
+
+  table {
+		width: 100%;
+		border-collapse: collapse;
+
+		@include sp {
+			width: 67.6rem;
+			min-width: 67.6rem;
+		}
+	}
+
+	thead {
+
+		tr {
+			height: 5rem;
+		}
+
+		th {
+			height: 5rem;
+			width: 22rem;
+			padding: 0;
+			background-color: #000;
+			color: #fff;
+			font-size: 2rem;
+			line-height: 1;
+			font-weight: 700;
+			text-align: center;
+			vertical-align: middle;
+
+			@include sp {
+				height: 6.6rem;
+				width: 16.9rem;
+				line-height: calc(25 / 20);
+			}
+		
+		  &:first-child {
+			  background-color: transparent;
+		  }
+
+			&.p-plan-table__recommend {
+				position: relative;
+				background-color: $color-red;
+			}
+		}
+	}
+	&__recommend-label {
+		position: absolute;
+		left: 0;
+		bottom: 100%;
+
+		width: 100%;
+		height: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		background-color: $color-red;
+
+		font-size: 1.7rem;
+		line-height: 1;
+	}
+
+	tbody {
+		tr {
+			height: 8.5rem; 
+      
+			&:last-child {
+				border-bottom: 0.5px solid #000;
+			}
+			
+		  &:nth-child(even) {
+			  background-color: rgba(80, 80, 80, 0.15);
+		  }
+
+      &.p-plan-table__price {
+				font-size: 2.2rem;
+				line-height: calc(33 / 22);
+				text-align: center;
+				vertical-align: middle;
+
+				th {
+          border-top: 0.5px solid #000;
+				}
+			}
+
+			th {
+				font-size: 1.7rem;
+				padding-left: 2rem;
+				line-height: calc(30 / 17);
+				vertical-align: middle;
+
+				@include sp {
+					position: relative;
+					top: 0.4rem;
+					font-size: 1.6rem;
+					padding-left: 1rem;
+					line-height: calc(25 / 16);
+				}
+			}
+		}
+
+		td {
+			text-align: center;
+			vertical-align: middle;
+			border-left: 0.5px solid #000;
+
+			@include sp {
+				position: relative;
+				top: 0.3rem;
+			}
+		}
+	}
+
+	&__standard {
+		color: $color-red;
+	}
+
+	&__circle {
+		display: block;
+		width: 1.5rem;
+		height: 1.5rem;
+		border-radius: 50%;
+		background-color: #000;
+		flex-shrink: 0;
+  }
+
+	&__circle-red {
+		background-color: $color-red;
+	}
+
+	&__cell {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 1.1rem;
+
+		span {
+			line-height: 1;
+		}
+	}
+
+	&__dash {
+		display: inline-block;
+		width: 3rem;
+		height: 0.1rem;
+		background-color: rgba(112, 112, 112, 1);
+	}
+
+	&__caption {
+		margin-top: 2.8rem;
+		font-size: 1.7rem;
+		line-height: calc(25 / 17);
+		padding-bottom: 22.3rem;
+
+		@include sp {
+			margin-top: 1.7rem;
+			font-size: 1.6rem;
+			line-height: calc(30 / 16);
+			padding-bottom: 18.6rem;
+		}
+	}
+}
