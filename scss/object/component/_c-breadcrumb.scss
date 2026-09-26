@@ -1,0 +1,17 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.c-breadcrumb {
+  padding: 1rem 0 0.7rem 0;
+  font-size: 1.6rem;
+  line-height: (33 / 16);
+  background-color: #E8E8E8;
+
+  @include sp {
+    padding: 0.3rem 2rem 0 2rem;
+  }
+
+  &__separator {
+    margin: 0 1.5rem; 
+  }
+}

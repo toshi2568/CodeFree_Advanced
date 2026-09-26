@@ -12,8 +12,10 @@
 @use './layout/l-inner';
 
 // componentの読み込み
-@use './object/component/c-button';
-@use './object/component/c-text';
+@use './object/component';
+// @use './object/component/c-button';
+// @use './object/component/c-text';
+// @use './object/component/c-breadcrumb';
 
 // projectの読み込み
 @use './object/project/p-header';
@@ -26,3 +28,6 @@
 @use './object/project/p-top-faq';
 @use './object/project/p-top-blog';
 @use './object/project/p-footer';
+@use './object/project/p-plan-fv';
+@use './object/project/p-plan-pricing';
+@use './object/project/p-plan-table';

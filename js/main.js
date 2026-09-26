@@ -101,3 +101,72 @@ function adjustFixedButtons() {
 window.addEventListener("scroll", adjustFixedButtons);
 
 adjustFixedButtons();
+
+// 料金表のスクロールバー
+
+const scrollArea = document.querySelector('.p-plan-table__scroll');
+const scrollbar = document.querySelector('.p-plan-table__bar');
+const thumb = document.querySelector('.p-plan-table__bar-thumb');
+
+const updateScrollbar = () => {
+  const visibleWidth = scrollArea.clientWidth;
+  const totalWidth = scrollArea.scrollWidth;
+
+  //つまみの横幅
+  const thumbWidth = (visibleWidth / totalWidth) * 100;
+  thumb.style.width = `${thumbWidth}%`;
+
+  //つまみの移動量
+  const maxScroll = totalWidth - visibleWidth;
+  const maxThumbMove = scrollbar.clientWidth - thumb.clientWidth;
+
+  const move =
+    maxScroll > 0
+      ? (scrollArea.scrollLeft / maxScroll) * maxThumbMove
+      : 0;
+  
+  thumb.style.transform = `translateX(${move}px)`;
+};
+
+scrollArea.addEventListener('scroll', updateScrollbar);
+window.addEventListener('resize', updateScrollbar);
+
+updateScrollbar();
+
+
+let isDragging = false;
+let startX = 0;
+let startScrollLeft = 0;
+
+thumb.addEventListener('pointerdown', (e) => {
+  isDragging = true;
+
+  startX = e.clientX;
+  startScrollLeft = scrollArea.scrollLeft;
+
+  thumb.setPointerCapture(e.pointerId);
+});
+
+thumb.addEventListener('pointermove', (e) => {
+  if (!isDragging) return;
+
+  const moveX = e.clientX - startX;
+
+  const maxScroll =
+    scrollArea.scrollWidth - scrollArea.clientWidth;
+
+  const maxThumbMove =
+    scrollbar.clientWidth - thumb.clientWidth;
+
+  const scrollAmount =
+    (moveX / maxThumbMove) * maxScroll;
+
+  scrollArea.scrollLeft =
+    startScrollLeft + scrollAmount;
+});
+
+thumb.addEventListener('pointerup', (e) => {
+  isDragging = false;
+
+  thumb.releasePointerCapture(e.pointerId);
+});
