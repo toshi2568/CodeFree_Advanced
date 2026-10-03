@@ -56,5 +56,10 @@
   display: block;
   width: 2.23rem;
   height: auto;
+  transition: 0.4s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
