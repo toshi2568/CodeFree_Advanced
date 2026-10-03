@@ -34,11 +34,27 @@
     height: auto;
     aspect-ratio: 260 / 200;
     margin-bottom: 2rem;
+    position: relative;
 
     @include sp {
       aspect-ratio: 335 / 200;
       margin-bottom: 3.1rem;
     }
+  }
+  &__item-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-red;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: calc(25 / 15);
+    font-weight: 700;
   }
   &__item-title {
     font-size: 2rem;
