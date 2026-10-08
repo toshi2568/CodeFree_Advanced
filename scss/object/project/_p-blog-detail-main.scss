@@ -4,24 +4,46 @@
 .p-blog-detail {
   padding: 7rem 0 18.7rem 0;
 
+  @include sp {
+    padding: 5rem 2rem 19.8rem 2rem;
+  }
+
   &-contents {
     display: flex;
     column-gap: 3.1rem;
+
+    @include sp {
+      display: block;
+      width: 100%;
+    }
   }
 
   &__main {
     width: 60rem;
+
+    @include sp {
+      width: 100%;
+    }
   }
 
   &__main-image {
     position: relative;
     width: 60rem;
-    flex-shrink: 0;
     margin-bottom: 4.6rem;
+
+    @include sp {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
 
     img {
       width: 100%;
       aspect-ratio: 600 / 350;
+
+      @include sp {
+        aspect-ratio: 335 / 200;
+
+      }
     }
   }
 
@@ -38,6 +60,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include sp {
+      width: 9rem;  
+    }
   }
 
   &__main-title {
@@ -45,6 +71,12 @@
     line-height: calc(40 / 25);
     font-weight: 700;
     margin-bottom: 0.5rem;
+
+    @include sp {
+      font-size: 2rem;
+      line-height: calc(30 / 20);
+      margin-bottom: 0.6rem;
+    }
   }
 
   &__main-date {
@@ -58,6 +90,11 @@
     column-gap: 0.35rem;
     height: 4rem;
     margin-bottom: 4.8rem;
+
+    @include sp {
+      column-gap: 0.3rem;
+      margin-bottom: 2.7rem;
+    }
   }
 
   &__main-sns-bar img {
@@ -70,28 +107,54 @@
 
   &__main-sns-facebook {
     width: 10.5rem;
+
+    @include sp {
+      width: 6.5rem;
+    }
   }
 
   &__main-sns-twitter {
     width: 8.8rem;
+
+    @include sp {
+      width: 6.5rem;
+    }
   }
 
   &__main-sns-hatena {
     width: 9.3rem;
+
+    @include sp {
+      width: 6.5rem;
+    }
   }
 
   &__main-sns-line {
     width: 8.1rem;
+
+    @include sp {
+      width: 6.5rem;
+    }
   }
 
   &__main-sns-pocket {
     width: 9.1rem;
+
+    @include sp {
+      width: 6.5rem;
+    }
   }
 
   &__main-text {
     font-size: 1.8rem;
     line-height: calc(30 / 18);
     margin-bottom: 3.3rem;
+
+    @include sp {
+      font-size: 1.6rem;
+      line-height: calc(30 / 16);
+      margin-bottom: 4rem;
+    }
   }
 
   &__main-second-title {
@@ -99,18 +162,30 @@
     line-height: calc(40 / 20);
     font-weight: 700;
     margin-bottom: 1.5rem;
+
+    @include sp {
+      line-height: calc(30 / 20);
+      margin-bottom: 1.7rem;
+    }
   }
 
   &__main-second-text {
     font-size: 1.8rem;
     line-height: calc(30 / 18);
     margin-bottom: 1.7rem;
+
+    @include sp {
+      font-size: 1.6rem;
+      line-height: calc(30 / 16);
+      margin-bottom: 6.9rem;
+    }
   }
 
   &__main-second-image {
     width: 33.5rem;
     height: auto;
-    margin-bottom: 2.8rem;
+    margin-bottom: 2.7rem;
+    aspect-ratio: 335 / 200;
   }
 
   &__main-second-list {
@@ -119,6 +194,13 @@
     padding-bottom: 4.05rem;
     border-bottom: 0.5px solid #000;
     margin-bottom: 4.35rem;
+
+    @include sp {
+      font-size: 1.6rem;
+      line-height: calc(30 / 16);
+      padding-bottom: 3.85rem;
+      margin-bottom: 5.2rem;
+    }
   }
 
   &__main-third-title {
@@ -126,8 +208,13 @@
     font-size: 2rem;
     line-height: calc(40 / 20);
     font-weight: 700;
-    padding-left: 1.25rem;
+    padding-left: 1.1rem;
     margin-bottom: 1.7rem;
+
+    @include sp {
+      line-height: calc(30 /20);
+      padding-left: 1rem;
+    }
 
     &::before {
       content: "";
@@ -139,6 +226,10 @@
       margin-right: 0.95rem;
       background-color: #000;
 
+      @include sp {
+        top: -0.5rem;
+        height: 5rem;
+      }
     } 
   }
 
@@ -149,6 +240,11 @@
     padding: 1.8rem 3rem 1rem 3rem;
     background-color: #E8E8E8;
     margin-bottom: 2.7rem;
+
+    @include sp {
+      column-gap: 1.748rem;
+      padding: 1.8rem 2rem 1rem 2.5rem;
+    }
   }
 
   &__main-third-quote img {
@@ -161,6 +257,11 @@
   &__main-third-text {
     font-size: 1.8rem;
     line-height: calc(30 / 18);
+
+    @include sp {
+      font-size: 1.6rem;
+      line-height: calc(30 / 16);
+    }
   }
 
   &__main-third-textlink {
@@ -169,17 +270,30 @@
     color: $color-red;
     text-decoration-line: underline;
     margin-bottom: 5.4rem;
+
+    @include sp {
+      margin-bottom: 4.5rem;
+    }
   }
   
   &__main-pager {
     display: flex;
     column-gap: 7.9rem;
     margin-bottom: 9.2rem;
+
+    @include sp {
+      column-gap: 2.2rem;
+      margin-bottom: 6.6rem;
+    }
   }
 
   &__main-pager-item {
     width: 26rem;
     transition: 0.4s ease;
+
+    @include sp {
+      width: 15.6rem;
+    }
 
     &:hover {
       opacity: 0.7;
@@ -198,6 +312,10 @@
     font-size: 1.7rem;
     line-height: calc(30 / 17);
     margin-bottom: 1.6rem;
+
+    @include sp {
+      width: 15.6rem;
+    }
   }
 
   &__main-pager-head-right {
@@ -213,6 +331,10 @@
     font-size: 1.7rem;
     line-height: calc(30 / 17);
     margin-bottom: 1.6rem;
+
+    @include sp {
+      width: 15.6rem;
+    }
   }
 
   &__main-paper-body {
@@ -223,16 +345,25 @@
   &__main-pager-image {
     width: 9.8rem;
     height: 6.8rem;
+
+    @include sp {
+      display: none;
+    }
   }
   
   &__main-pager-text {
     font-size: 1.6rem;
     line-height: (25 / 16);
+    font-weight: 700;
     width: 14.7rem;
   }
 
   &__main-related {
     width: 60rem;
+
+    @include sp {
+      width: 100%;
+    }
   }
 
   &__main-related-head {
@@ -245,18 +376,33 @@
     align-items: center;
     padding-left: 3rem;
     margin-bottom: 3rem;
+
+    @include sp {
+      justify-content: center;
+      padding-left: 0;
+      margin-bottom: 1.9rem;
+    }
   }
 
   &__main-related-items {
     display: flex;
     flex-direction: column;
     row-gap: 3rem;
+
+    @include sp {
+      row-gap: 1.8rem;
+      margin-bottom: 3.014rem;
+    }
   }
 
   &__main-related-item {
     display: flex;
     column-gap: 3rem;
     transition: 0.4s ease;
+
+    @include sp {
+      column-gap: 2rem;
+    }
 
     &:hover {
       opacity: 0.7;
@@ -266,6 +412,13 @@
   &__main-related-image {
     width: 20rem;
     height: auto;
+    aspect-ratio: 200 / 140;
+
+    @include sp {
+      width: 16rem;
+      height: auto;
+      aspect-ratio: 160 / 110;
+    }
   }
 
   &__main-related-textarea {
@@ -277,12 +430,28 @@
     line-height: calc(25 / 20);
     font-weight: 700;
     margin-bottom: 1.3rem;
+
+    @include sp {
+      font-size: 1.7rem;
+      line-height: calc(28 / 17);
+      margin-top: 0.85rem;
+      margin-bottom: 0.39rem;
+
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
   }
 
   &__main-related-date {
     font-size: 1.7rem;
     line-height: calc(30 / 17);
     margin-left: 0.5rem;
+
+    @include sp {
+      margin-left: 0;
+    }
   }
 
   &__main-related-image {
@@ -309,5 +478,4 @@
     background-color: $color-red;
     color: #fff;
   }
-
 }
