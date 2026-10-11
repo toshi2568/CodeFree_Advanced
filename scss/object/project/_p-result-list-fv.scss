@@ -1,0 +1,36 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-result-list-fv {
+  position: relative;
+
+  &__bg-image {
+
+    img {
+      aspect-ratio: 1080 / 200;
+
+      @include sp {
+        aspect-ratio: 375 / 300;
+      }
+    }
+  }
+
+  &__contents {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    z-index: 9998;
+    font-size: 2.5rem;
+    line-height: calc(60 / 25);
+    font-weight: 700;
+
+    @include sp {
+      top: 41%;
+    }
+  }
+
+}
