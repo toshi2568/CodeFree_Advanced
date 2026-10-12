@@ -141,6 +141,10 @@
 
     &:hover {
       opacity: 0.7;
+
+      @include sp {
+        opacity: 1;
+      }
     }
   }
 
