@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>きたむらミュージックスクール</title>
+		<link rel="icon" href="./img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="container">
+
+    <header class="header">
+      <div class="l-header">
+        <div class="l_inner p-header">
+          <h1 class="p-header__logo">
+            <a href="./index.html">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./img/logo-sp.png">
+                <img src="./img/logo.png" alt="きたむらミュージックスクールのロゴ">
+              </picture>
+            </a>
+          </h1>
+
+          <!-- pcナビ -->
+          <div class="p-header__right">
+            <ul class="p-header__nav">
+              <li>
+                <a href="plan.html">料金</a>  
+              </li>
+              <li>
+                <a href="blog-list.html">ブログ</a>  
+              </li>
+              <li>
+                <a href="result-list.html">卒業実績</a>  
+              </li>
+            </ul>
+            <a href="contact-form.html" class="p-header__contact">お問い合わせ</a>
+          </div>
+
+          <!-- ハンバーガーナビゲーション -->
+          <div class="p-header__menu">
+            <nav>
+              <ul>
+                <li>
+                  <a href="plan.html">料金</a>
+                </li>
+                <li>
+                  <a href="blog-list.html">ブログ</a>
+                </li>
+                <li>
+                  <a href="result-list.html">卒業実績</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- ハンバーガーボタン -->
+        <button class="hamburger" id="js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="main">
+
+        <!-- パンくずリスト -->
+        <section class="c-breadcrumb">
+          <div class="l_inner">
+            <a href="index.html">ホーム</a>
+            <span class="c-breadcrumb__separator">&gt;</span>
+            <span>卒業実績</span>
+            <span class="c-breadcrumb__separator">&gt;</span>
+            <span>ポップス</span>
+            <span class="c-breadcrumb__separator">&gt;</span>
+            <span>タイトルが入ります。タイトルが入ります。タイトルが入ります。</span>
+          </div>
+        </section>
+
+        <!-- 卒業実績詳細 -->
+        <section class="p-result-details">
+          <section class="l_inner">
+
+            <div class="p-result-details__main">
+              <div class="p-result-details__main-image">
+                <span class="p-result-details__main-label">ポップス</span>
+                <picture>
+                  <source media="(max-width: 767px)" srcset="./img/result-details-voice01-sp.jpg">
+                  <img src="./img/result-details-voice01.jpg" alt="マイクを持って歌っている男性">
+                </picture>
+              <div class="p-result-details__main-textarea">
+                <div class="p-result-details__main-title">
+                  <h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+                </div>
+                <p class="p-result-details__main-date">0000.00.00</p>
+              </div>
+              <div class="p-result-details__main-detail">
+                <div class="p-result-details__main-table">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>名前</th>
+                        <td>丸山</td>
+                      </tr>
+                      <tr>
+                        <th>職業</th>
+                        <td>証券会社勤務</td>
+                      </tr>
+                      <tr>
+                        <th>ジャンル</th>
+                        <td>入力欄</td>
+                      </tr>
+                      <tr>
+                        <th>実績</th>
+                        <td>入力欄</td>
+                      </tr>
+                      <tr>
+                        <th>SNS</th>
+                        <td>入力欄</td>
+                      </tr>  
+                    </tbody>
+                  </table>
+                </div>
+                <div class="p-result-details__main-text">
+                  <p>昔やっていた音楽活動で、副収入が得られるようになったので、毎日充実するようになりました。</p>
+                </div>
+              </div>
+            </div>
+              
+            <div class="p-result-details__main-pager">
+
+							<a href="#" class="p-result-details__main-pager-item">
+								<div class="p-result-details__main-pager-head-left">
+									<span>◀︎</span>
+									<span>前の記事</span>
+								</div>
+								<div class="p-result-details__main-paper-body">
+									<div class="p-result-details__main-pager-image">
+										<img src="./img/result-details-blog03.jpg" alt="歌を歌っている女性">
+									</div>
+									<div class="p-result-details__main-pager-text">
+										<p>タイトルが入ります。タイトルが入ります。タイトルが入</p>
+									</div>
+								</div>
+							</a>
+							
+							<a href="#" class="p-result-details__main-pager-item">
+								<div class="p-result-details__main-pager-head-right">
+									<span>次の記事</span>
+									<span>▶︎</span>
+								</div>
+								<div class="p-result-details__main-paper-body">
+									<div class="p-result-details__main-pager-image">
+										<img src="./img/result-details-blog03.jpg" alt="歌を歌っている女性">
+									</div>
+									<div class="p-result-details__main-pager-text">
+										<p>タイトルが入ります。タイトルが入ります。タイトルが入</p>
+									</div>
+								</div>
+							</a>
+
+            </div>
+						<div class="p-result-details__related">
+							<div class="p-result-details__related-head">関連記事</div>
+
+							<div class="p-result-details__related-items">
+
+							  <a href="#" class="p-result-details__related-item">
+							    <div class="p-result-details__related-image">
+									  <span class="p-result-details__related-label">ロック</span>
+                    <picture>
+                      <source media="(max-width: 767px)" srcset="./img/result-details-voice02-sp.jpg">
+                      <img src="./img/result-details-voice02.jpg" alt="マイクを持って歌っている男性">
+                    </picture>
+									</div>
+									<div class="p-result-details__related-textarea">
+									  <div class="p-result-details__related-title">
+										  <h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+										</div>
+                    <p class="p-result-details__related-date">0000.00.00</p>
+									</div>
+								</a>
+
+							  <a href="#" class="p-result-details__related-item">
+							    <div class="p-result-details__related-image">
+									  <span class="p-result-details__related-label">ジャズ</span>
+                    <picture>
+                      <source media="(max-width: 767px)" srcset="./img/result-details-voice03-sp.jpg">
+                      <img src="./img/result-details-voice03.jpg" alt="マイクを持って歌っている男性">
+                    </picture>
+									</div>
+									<div class="p-result-details__related-textarea">
+									  <div class="p-result-details__related-title">
+										  <h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+										</div>
+                    <p class="p-result-details__related-date">0000.00.00</p>
+									</div>
+								</a>
+
+							  <a href="#" class="p-result-details__related-item">
+							    <div class="p-result-details__related-image">
+									  <span class="p-result-details__related-label">ラテン</span>
+                    <picture>
+                      <source media="(max-width: 767px)" srcset="./img/result-details-voice04-sp.jpg">
+                      <img src="./img/result-details-voice04.jpg" alt="マイクを持って歌っている男性">
+                    </picture>
+									</div>
+									<div class="p-result-details__related-textarea">
+									  <div class="p-result-details__related-title">
+										  <h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+										</div>
+                    <p class="p-result-details__related-date">0000.00.00</p>
+									</div>
+								</a>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- ページトップへ戻るボタン -->
+        <div class="p-fixed-buttons">
+          <a href="#top" class="p-fixed-buttons__top">
+            <img src="./img/top-button.png" alt="ページトップへ戻るボタン">
+          </a>
+          <a href="contact-form.html" class="c-contact-btn">
+            お問い合わせ
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="footer__menu">
+          <ul class="footer__nav">
+            <li>
+              <a href="index.html">ホーム</a>  
+            </li>
+            <li>
+              <a href="plan.html">料金</a>  
+            </li>
+            <li>
+              <a href="blog-list.html">ブログ</a>  
+            </li>
+            <li>
+              <a href="result-list.html">卒業実績</a>  
+            </li>
+          </ul>
+        </div>
+        <div class="footer__logo">
+          <img src="./img/logo-white.png" alt="Logo">
+        </div>
+        <div class="footer__copyright">
+          <p>Copyright © 0000 KITAMURA music school Inc. <br class="sp">All Rights</p>
+        </div>
+        <div class="footer__sns">
+          <ul>
+            <li>
+              <a href="">
+                <div class="sns-link">
+                  <img src="./img/icon-twitter.png" alt="twitter">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="sns-link">
+                  <img src="./img/icon-facebook.png" alt="facebook">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="sns-link">
+                  <img src="./img/icon-youtube.png" alt="youtube">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <div class="sns-link">
+                  <img src="./img/icon-instagram.png" alt="instagram">
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
+            
