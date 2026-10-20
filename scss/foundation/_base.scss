@@ -24,6 +24,7 @@ body {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: calc(30 / 18);
+  letter-spacing: 0;
 }
 
 /* PC、SPの非表示 */
@@ -40,6 +41,8 @@ body {
 
 img {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 #container {

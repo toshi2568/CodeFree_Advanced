@@ -47,19 +47,20 @@ $(".p-top-voice__next").click(function() {
 });
 
 // アコーディオンの開閉
-$(".p-top-faq__question").on("click", function() {
-  $(this)
-    .next(".p-top-faq__answer")
-    .slideToggle();
+$(".p-top-faq__question, .p-top-faq__answer").on("click", function() {
+  const $item = $(this).closest(".p-top-faq__item");
+  const $question = $item.find(".p-top-faq__question");
+  const $answer = $item.find(".p-top-faq__answer");
+  const $arrow = $item.find(".p-top-faq__question-arrow");
 
-  $(this).toggleClass("is-open");
+  $answer.slideToggle();
 
-  const $arrow = $(this).find(".p-top-faq__question-arrow");
+  $question.toggleClass("is-open");
 
   if ($(this).hasClass("is-open")) {
-    $arrow.attr("src", "./img/faq-up-arrow.png");
+    $arrow.attr("src", "./img/faq-up-arrow.svg");
   } else {
-    $arrow.attr("src", "./img/faq-down-arrow.png");
+    $arrow.attr("src", "./img/faq-down-arrow.svg");
   }
 });
 
