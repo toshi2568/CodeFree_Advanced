@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>きたむらミュージックスクール</title>
-    <link rel="icon" href="./img/favicon.png" type="image/png">
+    <meta name="description" content="「音楽で生きる」を叶える ミュージックスクール「きたむらミュージックスクール」の公式ホームページです。">
+    <link rel="icon" href="./img/main-logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -15,11 +16,14 @@
       <div class="l-header">
         <div class="l_inner p-header">
           <h1 class="p-header__logo">
-            <a href="./index.html">
-              <picture>
-                <source media="(max-width: 767px)" srcset="./img/logo-sp.png">
-                <img src="./img/logo.png" alt="きたむらミュージックスクールのロゴ">
-              </picture>
+            <a href="./index.html" class="p-header__main-logo">
+              <span class="p-header__main-logo-image">
+                <img src="./img/main-logo.svg" alt="きたむらミュージックスクールのロゴ">
+              </span>
+              <span class="p-header__main-logo-textarea">
+                <span class="p-header__main-logo-name">きたむら</span>
+                <span class="p-header__main-logo-school">ミュージックスクール</span>
+              </span>
             </a>
           </h1>
 
@@ -70,7 +74,7 @@
       <div class="main">
 
         <!-- fv -->
-        <div class="p-top-fv">
+        <section class="p-top-fv">
           <div class="p-top-fv__bg-image">
             <picture>
               <source media="(max-width: 767px)" srcset="./img/FV-sp.jpg">
@@ -80,15 +84,15 @@
           <div class="p-top-fv__contents">
             <h2>「音楽で生きる」<br class="sp">を叶える<br>ミュージックスクール</h2>
           </div>
-        </div>
+        </section>
 
         <!-- concept -->
-        <div id="concept" class="p-top-concept">
+        <section id="concept" class="p-top-concept">
           <h2 class="p-top-concept__title">全人類、<br class="sp">ミュージシャン計画。</h2>
           <p class="p-top-concept__text">私たちは音楽を愛するすべての人が、音<br class="sp">楽に熱狂できる世界を目指しています。</p>
           <picture class="p-top-concept__image">
-            <source media="(max-width: 767px)" srcset="./img/semicircle-sp.jpg">
-            <img src="./img/semicircle.jpg" alt="女性がギターを弾いている">
+            <source media="(max-width: 767px)" srcset="./img/semicircle-sp.svg">
+            <img src="./img/semicircle.svg" alt="女性がギターを弾いている">
           </picture>
           <div class="p-top-concept__steps">
             <div class="p-top-concept__step-en">
@@ -104,8 +108,8 @@
             </div>
             <div class="p-top-concept__step-arrow">
               <picture>
-                <source media="(max-width: 767px)" srcset="./img/arrow-sp.png">
-                <img src="./img/arrow.png" alt="ステップの矢印">
+                <source media="(max-width: 767px)" srcset="./img/arrow-sp.svg">
+                <img src="./img/arrow.svg" alt="ステップの矢印">
               </picture>
             </div>
             <div class="p-top-concept__step-ja">
@@ -120,20 +124,20 @@
               </p>
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- message -->
-        <div id="message" class="p-top-message">
+        <section id="message" class="p-top-message">
           <h2 class="p-top-message__title">
             音楽業界初！<br>収益化までサポートする<br class="sp">ミュージックスクール
           </h2>
           <div class="p-top-message__text">
             <p>楽器や作詞作曲などの<br class="sp">技術・知識はもちろんのこと<br>自分で稼ぎつづけるための<br class="sp">ビジネス面もサポートします！</p>
           </div>
-        </div>
+        </section>
 
         <!-- reason -->
-        <div id="reason" class="p-top-reason">
+        <section id="reason" class="p-top-reason">
           <div class="l_inner">
             <h2 class="p-top-reason__title">
               きたむらミュージック<br class="sp">スクールが選ばれる理由
@@ -161,7 +165,7 @@
                 <div class="p-top-reason__item-image">
                   <picture>
                     <source media="(max-width: 767px)" srcset="./img/reason02-sp.jpg">
-                    <img src="./img/reason02.jpg" alt="犬を抱いている男性">
+                    <img src="./img/reason02.jpg" alt="会話する女性と男性">
                   </picture>
                 </div>
                 <div class="p-top-reason__item-textarea">
@@ -177,7 +181,7 @@
                 <div class="p-top-reason__item-image">
                   <picture>
                     <source media="(max-width: 767px)" srcset="./img/reason03-sp.jpg">
-                    <img src="./img/reason03.jpg" alt="犬を抱いている男性">
+                    <img src="./img/reason03.jpg" alt="ギターを持ちながら譜面を書く男性">
                   </picture>
                 </div>
                 <div class="p-top-reason__item-textarea">
@@ -191,7 +195,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- voice -->
         <section id="voice" class="p-top-voice">
@@ -201,41 +205,41 @@
             <div class="p-top-voice__swiper swiper">
               <div class="p-top-voice__swiper-wrapper swiper-wrapper">
 
-                <article class="p-top-voice__item swiper-slide">
+                <a href="result-details.html" class="p-top-voice__item swiper-slide">
                   <div class="p-top-voice__image">
                     <img src="img/voice01.jpg" alt="マイクで歌う男性">
                   </div>
                   <h3>証券会社勤務　丸山さん</h3>
                   <p>昔やっていた音楽活動で、副収入が得られるようになったので、毎日充実するようになりました。</p>
-                </article>
+                </a>
 
-                <article class="p-top-voice__item swiper-slide">
+                <a href="result-details.html" class="p-top-voice__item swiper-slide">
                   <div class="p-top-voice__image">
                     <img src="img/voice02.jpg" alt="犬を可愛がる女性">
                   </div>
                   <h3>IT会社勤務　S.Eさん</h3>
                   <p>プロの指導が受けられるので、技術が確実に上がるし、音楽への考え方とかも勉強できて最高です。</p>
-                </article>
+                </a>
 
-                <article class="p-top-voice__item swiper-slide">
+                <a href="result-details.html" class="p-top-voice__item swiper-slide">
                   <div class="p-top-voice__image">
                     <img src="img/voice03.jpg" alt="ギターを弾く男性">
                   </div>
                   <h3>都内大学生　田森さん</h3>
                   <p>就職する前にビジネスの事が学べるし、好きな音楽で稼げるようになったので選択肢が増えました。</p>
-                </article>
+                </a>
 
               </div>
             </div>
 
             <!-- 左矢印 -->
             <button class="p-top-voice__prev" type="button">
-              <img src="./img/arrow-l.png" alt="左矢印">
+              <img src="./img/arrow-l.svg" alt="左矢印">
             </button>
 
             <!-- 右矢印 -->
             <button class="p-top-voice__next" type="button">
-              <img src="./img/arrow-r.png" alt="右矢印">
+              <img src="./img/arrow-r.svg" alt="右矢印">
             </button>
 
           </div>  
@@ -249,8 +253,8 @@
 
               <div class="p-top-flow__step-arrow">
                 <picture>
-                  <source media="(max-width: 767px)" srcset="./img/arrow-flow-sp.png">
-                  <img src="./img/arrow-flow.png" alt="ステップの矢印">
+                  <source media="(max-width: 767px)" srcset="./img/arrow-flow-sp.svg">
+                  <img src="./img/arrow-flow.svg" alt="ステップの矢印">
                 </picture>
               </div>
 
@@ -293,34 +297,34 @@
 
               <div class="p-top-faq__item">
                 <button class="p-top-faq__question" type="button">
-                  <img class="p-top-faq__question-icon" src="./img/faq-circle.png" alt="よくある質問のアイコン"> 
+                  <img class="p-top-faq__question-icon" src="./img/faq-circle.svg" alt="よくある質問のアイコン"> 
                   <span class="p-top-faq__question-text">
                     どのような生徒さんがどれぐらいの期間で稼いでいますか？
                   </span>
-                  <img class="p-top-faq__question-arrow" src="./img/faq-down-arrow.png" alt="よくある質問の下向き矢印">
+                  <img class="p-top-faq__question-arrow" src="./img/faq-down-arrow.svg" alt="よくある質問の下向き矢印">
                 </button>
 
-                <div class="p-top-faq__answer">
-                  <div class="p-top-faq__answer-inner">
-                    <img class="p-top-faq__answer-icon" src="./img/faq-answer.png" alt="よくある回答のアイコン">
+                <button class="p-top-faq__answer">
+                  <span class="p-top-faq__answer-inner">
+                    <img class="p-top-faq__answer-icon" src="./img/faq-answer.svg" alt="よくある回答のアイコン">
                     <span class="p-top-faq__answer-text">
                       学生さんから社会人の方が早くて半年で収益を得ています。
                     </span>
-                  </div>
-                </div>
+                  </span>
+                </button>
               </div>
               <div class="p-top-faq__item">
                 <button class="p-top-faq__question" type="button">
-                  <img class="p-top-faq__question-icon" src="./img/faq-circle.png" alt="よくある質問のアイコン"> 
+                  <img class="p-top-faq__question-icon" src="./img/faq-circle.svg" alt="よくある質問のアイコン"> 
                   <span class="p-top-faq__question-text">
                     途中でプランを変更することは可能ですか？
                   </span>
-                  <img class="p-top-faq__question-arrow" src="./img/faq-down-arrow.png" alt="よくある質問の下向き矢印">
+                  <img class="p-top-faq__question-arrow" src="./img/faq-down-arrow.svg" alt="よくある質問の下向き矢印">
                 </button>
 
                 <div class="p-top-faq__answer">
                   <div class="p-top-faq__answer-inner">
-                    <img class="p-top-faq__answer-icon" src="./img/faq-answer.png" alt="よくある回答のアイコン">
+                    <img class="p-top-faq__answer-icon" src="./img/faq-answer.svg" alt="よくある回答のアイコン">
                     <span class="p-top-faq__answer-text">
                       途中でプラン変更も可能です。毎月15日までに申請すれば翌月からプランが変更となります。
                     </span>
@@ -329,16 +333,16 @@
               </div>
               <div class="p-top-faq__item">
                 <button class="p-top-faq__question" type="button">
-                  <img class="p-top-faq__question-icon" src="./img/faq-circle.png" alt="よくある質問のアイコン"> 
+                  <img class="p-top-faq__question-icon" src="./img/faq-circle.svg" alt="よくある質問のアイコン"> 
                   <span class="p-top-faq__question-text">
                     入学金などの分割払いはできますか？
                   </span>
-                  <img class="p-top-faq__question-arrow" src="./img/faq-down-arrow.png" alt="よくある質問の下向き矢印">
+                  <img class="p-top-faq__question-arrow" src="./img/faq-down-arrow.svg" alt="よくある質問の下向き矢印">
                 </button>
 
                 <div class="p-top-faq__answer">
                   <div class="p-top-faq__answer-inner">
-                    <img class="p-top-faq__answer-icon" src="./img/faq-answer.png" alt="よくある回答のアイコン">
+                    <img class="p-top-faq__answer-icon" src="./img/faq-answer.svg" alt="よくある回答のアイコン">
                     <span class="p-top-faq__answer-text">
                       はい、可能です。36回払いまで分割可能です。
                     </span>
@@ -347,16 +351,16 @@
               </div>
               <div class="p-top-faq__item">
                 <button class="p-top-faq__question" type="button">
-                  <img class="p-top-faq__question-icon" src="./img/faq-circle.png" alt="よくある質問のアイコン"> 
+                  <img class="p-top-faq__question-icon" src="./img/faq-circle.svg" alt="よくある質問のアイコン"> 
                   <span class="p-top-faq__question-text">
                     休学することも可能ですか？
                   </span>
-                  <img class="p-top-faq__question-arrow" src="./img/faq-down-arrow.png" alt="よくある質問の下向き矢印">
+                  <img class="p-top-faq__question-arrow" src="./img/faq-down-arrow.svg" alt="よくある質問の下向き矢印">
                 </button>
 
                 <div class="p-top-faq__answer">
                   <div class="p-top-faq__answer-inner">
-                    <img class="p-top-faq__answer-icon" src="./img/faq-answer.png" alt="よくある回答のアイコン">
+                    <img class="p-top-faq__answer-icon" src="./img/faq-answer.svg" alt="よくある回答のアイコン">
                     <span class="p-top-faq__answer-text">
                       はい、可能です。最大３カ月休学可能です。
                     </span>
@@ -378,7 +382,7 @@
                   <span class="p-top-blog__item-label">SNS</span>
                   <picture>
                     <source media="(max-width: 767px)" srcset="./img/blog03-sp.jpg">
-                    <img src="./img/top-blog03.jpg" alt="マイクを持っている女性">
+                    <img src="./img/top-blog03.jpg" alt="マイクを持って歌っている女性">
                   </picture>
                 </div>
                 <div class="p-top-blog__item-textarea">
@@ -425,9 +429,9 @@
         <!-- ページトップへ戻るボタン -->
         <div class="p-fixed-buttons">
           <a href="#top" class="p-fixed-buttons__top">
-            <img src="./img/top-button.png" alt="ページトップへ戻るボタン">
+            <img src="./img/top-button.svg" alt="ページトップへ戻るボタン">
           </a>
-          <a href="contact-form.html"class="c-contact-btn">
+          <a href="contact-form.html" class="c-contact-btn">
             お問い合わせ
           </a>
         </div>
@@ -454,7 +458,9 @@
           </ul>
         </div>
         <div class="footer__logo">
-          <img src="./img/logo-white.png" alt="Logo">
+          <a href="index.html">
+            <img src="./img/logo-white.svg" alt="Logo">
+          </a>
         </div>
         <div class="footer__copyright">
           <p>Copyright © 0000 KITAMURA music school Inc. <br class="sp">All Rights</p>
@@ -462,30 +468,30 @@
         <div class="footer__sns">
           <ul>
             <li>
-              <a href="">
+              <a href="" target="_blank" rel="noopener noreferrer">
                 <div class="sns-link">
-                  <img src="./img/icon-twitter.png" alt="twitter">
+                  <img src="./img/icon-twitter.svg" alt="twitter">
                 </div>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" target="_blank" rel="noopener noreferrer">
                 <div class="sns-link">
-                  <img src="./img/icon-facebook.png" alt="facebook">
+                  <img src="./img/icon-facebook.svg" alt="facebook">
                 </div>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" target="_blank" rel="noopener noreferrer">
                 <div class="sns-link">
-                  <img src="./img/icon-youtube.png" alt="youtube">
+                  <img src="./img/icon-youtube.svg" alt="youtube">
                 </div>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" target="_blank" rel="noopener noreferrer">
                 <div class="sns-link">
-                  <img src="./img/icon-instagram.png" alt="instagram">
+                  <img src="./img/icon-instagram.svg" alt="instagram">
                 </div>
               </a>
             </li>

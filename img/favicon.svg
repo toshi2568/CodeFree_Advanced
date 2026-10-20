@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Music School</title>
+  <rect width="64" height="64" rx="14" fill="#b51f36"/>
+  <path d="M26 22V44M47 17V39M26 22L47 17V25L26 30Z" fill="#fff" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="20" cy="45" rx="8" ry="6" transform="rotate(-18 20 45)" fill="#fff"/>
+  <ellipse cx="41" cy="40" rx="8" ry="6" transform="rotate(-18 41 40)" fill="#fff"/>
+</svg>

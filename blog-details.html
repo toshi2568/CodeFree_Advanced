@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>きたむらミュージックスクール</title>
-    <link rel="icon" href="./img/favicon.png" type="image/png">
+		<meta name="description" content="「音楽で生きる」を叶える ミュージックスクール「きたむらミュージックスクール」の公式ホームページです。">
+    <link rel="icon" href="./img/main-logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -15,11 +16,14 @@
       <div class="l-header">
         <div class="l_inner p-header">
           <h1 class="p-header__logo">
-            <a href="./index.html">
-              <picture>
-                <source media="(max-width: 767px)" srcset="./img/logo-sp.png">
-                <img src="./img/logo.png" alt="きたむらミュージックスクールのロゴ">
-              </picture>
+            <a href="./index.html" class="p-header__main-logo">
+              <span class="p-header__main-logo-image">
+                <img src="./img/main-logo.svg" alt="きたむらミュージックスクールのロゴ">
+              </span>
+              <span class="p-header__main-logo-textarea">
+                <span class="p-header__main-logo-name">きたむら</span>
+                <span class="p-header__main-logo-school">ミュージックスクール</span>
+              </span>
             </a>
           </h1>
 
@@ -70,7 +74,7 @@
       <div class="main">
 
         <!-- パンくずリスト -->
-        <section class="c-breadcrumb">
+        <div class="c-breadcrumb">
           <div class="l_inner">
             <a href="index.html">ホーム</a>
             <span class="c-breadcrumb__separator">&gt;</span>
@@ -80,7 +84,7 @@
             <span class="c-breadcrumb__separator">&gt;</span>
             <span>アルペジオが劇的に向上する３つの習慣</span>
           </div>
-        </section>
+        </div>
 
         <!-- ブログ詳細 -->
         <section class="p-blog-detail">
@@ -96,38 +100,38 @@
                   </picture>  
                 </div>
                 <div class="p-blog-detail__main-title">
-                  <p>アルペジオが劇的に向上する３つの習慣</p>
+                  <h2>アルペジオが劇的に向上する３つの習慣</h2>
                 </div>
                 <p class="p-blog-detail__main-date">0000.00.00</p>
                 <div class="p-blog-detail__main-sns-bar">
                   <a href="#" class="p-blog-detail__main-sns-facebook">
                     <picture>
-                      <source media="(max-width: 767px)" srcset="./img/facebook-sp.jpg">
-                      <img src="./img/facebook.jpg" alt="facebook">
+                      <source media="(max-width: 767px)" srcset="./img/facebook-sp.svg">
+                      <img src="./img/facebook.svg" alt="facebook">
                     </picture>  
                   </a>
                   <a href="#" class="p-blog-detail__main-sns-twitter">
                     <picture>
-                      <source media="(max-width: 767px)" srcset="./img/twitter-sp.jpg">
-                      <img src="./img/twitter.jpg" alt="facebook">
+                      <source media="(max-width: 767px)" srcset="./img/twitter-sp.svg">
+                      <img src="./img/twitter.svg" alt="twitter">
                     </picture>  
                   </a>
                   <a href="#" class="p-blog-detail__main-sns-hatena">
                     <picture>
-                      <source media="(max-width: 767px)" srcset="./img/hatena-sp.jpg">
-                      <img src="./img/hatena.jpg" alt="hatena">
+                      <source media="(max-width: 767px)" srcset="./img/hatena-sp.svg">
+                      <img src="./img/hatena.svg" alt="hatena">
                     </picture>  
                   </a>
                   <a href="#" class="p-blog-detail__main-sns-line">
                     <picture>
-                      <source media="(max-width: 767px)" srcset="./img/line-sp.jpg">
-                      <img src="./img/line.jpg" alt="line">
+                      <source media="(max-width: 767px)" srcset="./img/line-sp.svg">
+                      <img src="./img/line.svg" alt="line">
                     </picture>  
                   </a>
                   <a href="#" class="p-blog-detail__main-sns-pocket">
                     <picture>
-                      <source media="(max-width: 767px)" srcset="./img/pocket-sp.jpg">
-                      <img src="./img/pocket.jpg" alt="pocket">
+                      <source media="(max-width: 767px)" srcset="./img/pocket-sp.svg">
+                      <img src="./img/pocket.svg" alt="pocket">
                     </picture>  
                   </a>
                 </div>
@@ -154,7 +158,7 @@
                 </div>
                 <div class="p-blog-detail__main-third-textarea">
                   <div class="p-blog-detail__main-third-quote">
-                    <img src="./img/icon-blockquote.png" alt="ダブルクォーテーション">
+                    <img src="./img/icon-blockquote.svg" alt="ダブルクォーテーション">
                   </div>
                   <div class="p-blog-detail__main-third-text">
                     <p>本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</p>
@@ -259,9 +263,9 @@
                     <p>無料メールマガジン</p>
                   </div>
                   <div class="p-blog-detail__sidebar-banner-body">
-                    <div class="p-blog-detail__sidebar-banner-box">
+                    <a class="p-blog-detail__sidebar-banner-box">
                       <p>バナー広告</p>
-                    </div>
+                    </a>
                   </div>
                 </div>
 
@@ -270,10 +274,10 @@
                     <p>ブログ内を検索</p>
                   </div>
                   <div class="p-blog-detail__sidebar-search-body">
-                    <form class="p-blog-detail__sidebar-search-form" action="" method="get">
+                    <form action="search.html" class="p-blog-detail__sidebar-search-form" method="get">
                       <input type="search" class="p-blog-detail__sidebar-search-input" name="search" placeholder="">
                       <button type="submit" class="p-blog-detail__sidebar-search-button" aria-label="検索">
-                        <img src="./img/icon-search.png" alt="虫眼鏡">
+                        <img src="./img/icon-search.svg" alt="虫眼鏡">
                       </button>
                     </form>
                   </div>
@@ -318,21 +322,33 @@
                     <p>カテゴリー</p>
                   </div>
                   <div class="p-blog-detail__sidebar-category-list">
-                    <a href="blog-details.html" class="p-blog-detail__sidebar-category-item">
-                      ギター
-                    </a>
-                    <a href="blog-details.html" class="p-blog-detail__sidebar-category-item">
-                      集客方法
-                    </a>
-                    <a href="blog-details.html" class="p-blog-detail__sidebar-category-item">
-                      SNS
-                    </a>
-                    <a href="blog-details.html" class="p-blog-detail__sidebar-category-item">
-                      ピアノ
-                    </a>
-                    <a href="blog-details.html" class="p-blog-detail__sidebar-category-item">
-                      営業活動
-                    </a>
+                    <ul>
+                      <li>
+												<a href="blog-details.html" class="p-blog-detail__sidebar-category-item">
+													ギター
+												</a>
+                      </li>
+											<li>
+                        <a href="blog-details.html" class="p-blog-detail__sidebar-category-item">
+                          集客方法
+                        </a>
+											</li>
+										  <li>
+                        <a href="blog-details.html" class="p-blog-detail__sidebar-category-item">
+                          SNS
+                        </a>
+											</li>
+											<li>
+                        <a href="blog-details.html" class="p-blog-detail__sidebar-category-item">
+                          ピアノ
+                        </a>
+											</li>
+											<li>
+                        <a href="blog-details.html" class="p-blog-detail__sidebar-category-item">
+                          営業活動
+                        </a>
+											</li>
+                    </ul>
                   </div>
 
                 </div>   
@@ -345,7 +361,7 @@
         <!-- ページトップへ戻るボタン -->
         <div class="p-fixed-buttons">
           <a href="#top" class="p-fixed-buttons__top">
-            <img src="./img/top-button.png" alt="ページトップへ戻るボタン">
+            <img src="./img/top-button.svg" alt="ページトップへ戻るボタン">
           </a>
           <a href="contact-form.html" class="c-contact-btn">
             お問い合わせ
@@ -374,7 +390,9 @@
           </ul>
         </div>
         <div class="footer__logo">
-          <img src="./img/logo-white.png" alt="Logo">
+          <a href="index.html">
+            <img src="./img/logo-white.svg" alt="Logo">
+          </a>
         </div>
         <div class="footer__copyright">
           <p>Copyright © 0000 KITAMURA music school Inc. <br class="sp">All Rights</p>
@@ -382,30 +400,30 @@
         <div class="footer__sns">
           <ul>
             <li>
-              <a href="">
+              <a href="" target="_blank" rel="noopener noreferrer">
                 <div class="sns-link">
-                  <img src="./img/icon-twitter.png" alt="twitter">
+                  <img src="./img/icon-twitter.svg" alt="twitter">
                 </div>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" target="_blank" rel="noopener noreferrer">
                 <div class="sns-link">
-                  <img src="./img/icon-facebook.png" alt="facebook">
+                  <img src="./img/icon-facebook.svg" alt="facebook">
                 </div>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" target="_blank" rel="noopener noreferrer">
                 <div class="sns-link">
-                  <img src="./img/icon-youtube.png" alt="youtube">
+                  <img src="./img/icon-youtube.svg" alt="youtube">
                 </div>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" target="_blank" rel="noopener noreferrer">
                 <div class="sns-link">
-                  <img src="./img/icon-instagram.png" alt="instagram">
+                  <img src="./img/icon-instagram.svg" alt="instagram">
                 </div>
               </a>
             </li>
