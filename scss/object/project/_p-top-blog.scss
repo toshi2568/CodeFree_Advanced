@@ -26,8 +26,8 @@
     column-gap: 5rem;
 
     @include sp {
+      grid-template-columns: repeat(1, 1fr);
       row-gap: 4.1rem;
-      flex-direction: column;
     }
   }
 
