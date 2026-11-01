@@ -21,7 +21,8 @@
     }
   }
   &__items {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 5rem;
 
     @include sp {
@@ -31,7 +32,7 @@
   }
 
   &__item {
-    transition: all 0.4s ease;
+    transition: opacity 0.4s ease;
 
     &:hover {
       opacity: 0.7;
@@ -93,6 +94,11 @@
     display: inline-block;
     text-decoration: underline;
     margin-top: 3.7rem;
+    transition: opacity 0.4s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
   &__link-wrap {
     text-align: right;

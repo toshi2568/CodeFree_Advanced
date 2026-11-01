@@ -2,11 +2,7 @@
 @use '../foundation/mixin' as *;
 
 .footer {
-  height: 27.4rem;
   background-color: $color-red;
   color: #fff;
 
-  @include sp {
-    height: 303px;
-  }
 }

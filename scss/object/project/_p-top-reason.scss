@@ -23,7 +23,7 @@
   &__items {
     display: flex;
     flex-direction: column;
-    row-gap: 4.7rem;
+    row-gap: 5rem;
 
     @include sp {
       row-gap: 3.9rem;
@@ -50,7 +50,7 @@
   &__item-title {
     position: relative;
     font-size: 2.2rem;
-    line-height: (33 / 22);
+    line-height: calc(33 / 22);
     font-weight: 700;
     margin-bottom: 4.9rem;
 

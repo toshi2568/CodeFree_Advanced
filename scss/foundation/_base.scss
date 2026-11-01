@@ -25,6 +25,10 @@ body {
   font-weight: 500;
   line-height: calc(30 / 18);
   letter-spacing: 0;
+  margin-top: 8rem;
+  @include sp {
+    margin-top: 50px;
+  }
 }
 
 /* PC、SPの非表示 */

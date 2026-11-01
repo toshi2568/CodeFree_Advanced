@@ -24,7 +24,7 @@
   background-color: $color-red;
   letter-spacing: 0.4rem;
   color: #fff;
-  transition: all 0.4s ease;
+  transition: background-color 0.4s ease, color 0.4s ease;
 
   @include sp {
     width: 100%;
@@ -60,16 +60,18 @@
   &__top {
     margin-right: 11.6rem;
     margin-bottom: 3.1rem;
+    transition: opacity 0.4s ease;
+    display: block;
+    width: 6.8rem;
+    height: 6.8rem;
 
     @include sp {
       margin-right: 0;
       margin-bottom: 1.9rem;
     }
 
-    img {
-      display: block;
-      width: 6.8rem;
-      height: 6.8rem;
+    &:hover {
+      opacity: 0.7;
     }
   }
   &.is-show {
@@ -83,9 +85,9 @@
   visibility: visible;
 }
 
-.p-fixed-buttons.is-show:hover {
-  opacity: 0.7;
-}
+// .p-fixed-buttons.is-show:hover {
+//   opacity: 0.7;
+// }
 
 .page-contact {
   .p-fixed-buttons {
@@ -108,29 +110,32 @@
 }
 
 .c-home-button  {
-  width: 25rem;
-  height: 5rem;
-  margin-inline: auto;
-  font-size: 2.5rem;
-  line-height: calc(33 / 25);
-  font-weight: 700;
-  background-color: $color-red;
-  border: 1px solid $color-red;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.4s ease;
+  a {
+    width: 25rem;
+    height: 5rem;
+    margin-inline: auto;
+    font-size: 2.5rem;
+    line-height: calc(33 / 25);
+    font-weight: 700;
+    background-color: $color-red;
+    border: 1px solid $color-red;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  
+    @include sp {
+      font-size: 2rem;
+      line-height: calc(26 / 20);
+      width: 100%;
+    }
 
-  @include sp {
-    font-size: 2rem;
-    line-height: calc(26 / 20);
-    width: 100%;
-  }
-
-  &:hover {
-    background-color: #fff;
-    color: $color-red;
-    cursor: pointer;
+    &:hover {
+      background-color: #fff;
+      color: $color-red;
+      cursor: pointer;
+    }
   }
 }
+

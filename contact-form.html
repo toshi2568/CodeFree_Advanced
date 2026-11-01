@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>きたむらミュージックスクール</title>
-    <meta name="description" content="「音楽で生きる」を叶える ミュージックスクール「きたむらミュージックスクール」の公式ホームページです。">
+    <title>お問い合わせ｜きたむらミュージックスクール</title>
+    <meta name="description" content="「きたむらミュージックスクール」のお問い合わせページです。">
     <link rel="icon" href="./img/main-logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body class="page-contact">
   <div id="container">
@@ -15,7 +19,7 @@
     <header class="header">
       <div class="l-header">
         <div class="l_inner p-header">
-          <h1 class="p-header__logo">
+          <div class="p-header__logo">
             <a href="./index.html" class="p-header__main-logo">
               <span class="p-header__main-logo-image">
                 <img src="./img/main-logo.svg" alt="きたむらミュージックスクールのロゴ">
@@ -25,11 +29,11 @@
                 <span class="p-header__main-logo-school">ミュージックスクール</span>
               </span>
             </a>
-          </h1>
+          </div>
 
-          <!-- pcナビ -->
-          <div class="p-header__right">
-            <ul class="p-header__nav">
+          <!-- ヘッダーナビ -->
+          <nav class="l-header__nav" aria-label="ヘッダーナビゲーション">
+            <ul>
               <li>
                 <a href="plan.html">料金</a>  
               </li>
@@ -41,24 +45,7 @@
               </li>
             </ul>
             <a href="contact-form.html" class="p-header__contact">お問い合わせ</a>
-          </div>
-
-          <!-- ハンバーガーナビゲーション -->
-          <div class="p-header__menu">
-            <nav>
-              <ul>
-                <li>
-                  <a href="plan.html">料金</a>
-                </li>
-                <li>
-                  <a href="blog-list.html">ブログ</a>
-                </li>
-                <li>
-                  <a href="result-list.html">卒業実績</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          </nav>
         </div>
 
         <!-- ハンバーガーボタン -->
@@ -268,7 +255,6 @@
 
   </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>

@@ -40,7 +40,7 @@
   &-item {
     display: flex;
     column-gap: 5rem;
-    transition: 0.4s ease;
+    transition: opacity 0.4s ease;
 
     @include sp {
       flex-direction: column;
@@ -153,7 +153,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.4s ease;
+    transition: background-color 0.4s, color 0.4s ease;
 
     @include sp {
       width: 4.4rem;

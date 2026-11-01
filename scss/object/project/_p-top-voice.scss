@@ -38,7 +38,7 @@
   }
 
   &__item {
-    transition: all 0.4s ease;
+    transition: opacity 0.4s ease;
 
     &:hover {
       opacity: 0.7;
@@ -59,6 +59,7 @@
         aspect-ratio: 335 / 200;
       }
     }
+
     h3 {
       margin-top: 1.7rem;
       color: #fff;
@@ -100,7 +101,7 @@
       height: auto;
       display: block;
       object-fit: contain;
-      transition: all 0.4s ease;
+      transition: opacity 0.4s ease;
     }
 
     &:hover {
@@ -109,7 +110,12 @@
   }
 
   &__prev {
-    left: -4.7rem;
+    left: -5rem;
+    transition: opacity 0.4s;
+
+    &:hover {
+      opacity: 0.7;
+    }
 
     @include sp {
       left: 0.5rem;
@@ -118,6 +124,11 @@
 
   &__next {
     right: -5rem;
+    transition: opacity 0.4s;
+
+    &:hover {
+      opacity: 0.7;
+    }
 
     @include sp {
       right: 0.5rem;

@@ -46,7 +46,7 @@
   &__item {
     display: flex;
     column-gap: 5rem;
-    transition: all 0.4s ease;
+    transition: opacity 0.4s ease;
 
     @include sp {
       flex-direction: column;
@@ -63,15 +63,14 @@
   
   &__item-image {
     position: relative;
+    width: 26rem;
 
     img {
-      width: 26rem;
+      width: 100%;
       height: 100%;
       aspect-ratio: 260 / 184;
 
       @include sp {
-        width: 100%;
-        height: 100%;
         aspect-ratio: 335 / 200;
         margin-bottom: 3.2rem;
       }
@@ -174,7 +173,7 @@
     a {
       color: #000;
       text-decoration: none;
-      transition: all 0.4s ease;
+      transition: background-color 0.4s ease, color 0.4s ease;
 
       &:hover {
         background-color: #000;

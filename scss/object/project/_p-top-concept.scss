@@ -2,7 +2,7 @@
 @use '../../foundation/mixin' as *;
 
 .p-top-concept {
-  padding: 6.5rem 0 5rem;
+  padding: 6.5rem 0 5.5rem;
 
   @include sp {
     padding: 4.6rem 2rem 3.4rem 2rem;
@@ -35,70 +35,97 @@
       text-align: center;
     }
   }
-  &__image img {
+
+  &__image {
     display: block;
     width: 85.815rem;
     margin: 0 auto;
 
     @include sp {
       width: 100%;
+      margin-bottom: 3.2rem;
     }
   }
-  &__steps {
+
+  &__items {
+    position: relative;
     display: flex;
-    justify-content: center;
-    gap: 2.388rem;
-    margin-top: -0.5rem;
-    margin-left: -2.5rem;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.7rem;
+    margin-top: 2.2rem;
 
     @include sp {
-      gap: 2.4rem;
-      margin-top: 0.2rem;
-      margin-left: -1.2rem;
+      row-gap: 1.9rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -12%;
+      left: 49.8%;
+      width: 0.3rem;
+      height: 100%;
+      background-color: $color-red;
+
+      @include sp {
+        top: -12%;
+        left: 49.6%;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -12%;
+      left: 49.9%;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-top: 0.3rem solid $color-red;
+      border-left: 0.3rem solid $color-red;
+      transform: translateX(-50%) rotate(45deg);
     }
   }
-  &__step-en {
+
+  &__item {
+    display: grid;
+    grid-template-columns: 18rem 2rem 18rem;
+    column-gap: 2.9rem;
+    align-items: center;
+
+    @include sp {
+      grid-template-columns: 12rem 2rem 12rem;
+      column-gap: 3rem;
+    }
+  }
+  &__item-en {
     font-size: 2.5rem;
-    line-height: (50 / 25);
-
-    @include sp {
-      font-size: 2rem;
-      line-height: (50 / 20);
-      margin-top: 0.6rem;
-    }
-  }
-  &__step-en-item {
+    line-height: 2;
     color: $color-red;
     font-weight: 700;
     text-align: right;
-    margin-top: 2.1rem;
-
-    &:first-child {
-      transform: translateY(4px);
-    }
-
-  }
-  &__step-arrow {
-    width: 3.5rem;
-    height: 22rem;
-  }
-  &__step-ja {
-    font-size: 2.3rem;
-    line-height: calc(50 / 23);
 
     @include sp {
       font-size: 2rem;
       line-height: calc(50 / 20);
-      margin-top: 0.5rem;
     }
   }
-  &__step-ja-item {
-    text-align: left;
-    margin-top: 2.1rem;
-    margin-left: -0.3rem;
 
-    &:first-child {
-      transform: translateY(5px);
+  &__item-circle {
+    width: 2rem;
+    height: 2rem;
+    background-color: $color-red;
+    border-radius: 50%;
+  }
+
+  &__item-ja {
+    font-size: 2.3rem;
+    line-height: calc(50 / 23);
+    text-align: left;
+
+    @include sp {
+      font-size: 2rem;
+      line-height: calc(50 / 20);
     }
   }
 }

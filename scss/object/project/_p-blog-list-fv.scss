@@ -9,6 +9,7 @@
     position: absolute;
     inset: 0;
     background-color: rgb(50 50 50 / 48.63%);
+    mix-blend-mode: multiply;
   }
 
   &__contents {

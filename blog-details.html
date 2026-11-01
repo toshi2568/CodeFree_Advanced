@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>きたむらミュージックスクール</title>
-		<meta name="description" content="「音楽で生きる」を叶える ミュージックスクール「きたむらミュージックスクール」の公式ホームページです。">
+    <title>ブログ詳細｜きたむらミュージックスクール</title>
+		<meta name="description" content="「きたむらミュージックスクール」のブログ詳細ページです。">
     <link rel="icon" href="./img/main-logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="container">
@@ -27,9 +31,9 @@
             </a>
           </h1>
 
-          <!-- pcナビ -->
-          <div class="p-header__right">
-            <ul class="p-header__nav">
+          <!-- ヘッダーナビ -->
+          <nav class="l-header__nav" aria-label="ヘッダーナビゲーション">
+            <ul>
               <li>
                 <a href="plan.html">料金</a>  
               </li>
@@ -41,24 +45,7 @@
               </li>
             </ul>
             <a href="contact-form.html" class="p-header__contact">お問い合わせ</a>
-          </div>
-
-          <!-- ハンバーガーナビゲーション -->
-          <div class="p-header__menu">
-            <nav>
-              <ul>
-                <li>
-                  <a href="plan.html">料金</a>
-                </li>
-                <li>
-                  <a href="blog-list.html">ブログ</a>
-                </li>
-                <li>
-                  <a href="result-list.html">卒業実績</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          </nav>
         </div>
 
         <!-- ハンバーガーボタン -->
@@ -277,7 +264,9 @@
                     <form action="search.html" class="p-blog-detail__sidebar-search-form" method="get">
                       <input type="search" class="p-blog-detail__sidebar-search-input" name="search" placeholder="">
                       <button type="submit" class="p-blog-detail__sidebar-search-button" aria-label="検索">
-                        <img src="./img/icon-search.svg" alt="虫眼鏡">
+                        <span class="p-blog-detail__sidebar-search-button-icon">
+                          <img src="./img/icon-search.svg" alt="虫眼鏡">
+                        </span>
                       </button>
                     </form>
                   </div>
@@ -435,7 +424,6 @@
 
   </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>

@@ -133,7 +133,7 @@
     }
   }
   &__main-pager-item {
-    transition: all 0.4s ease;
+    transition: opacity 0.4s ease;
 
     &:hover {
       opacity: 0.7;
@@ -242,7 +242,7 @@
   &__related-item {
     display: flex;
     column-gap: 3rem;
-    transition: all 0.4s ease;
+    transition: opacity 0.4s ease;
 
     @include sp {
       column-gap: 2rem;
@@ -268,7 +268,7 @@
 
     img {
       width: 100%;
-      height: auto;
+      height: 100%;
       aspect-ratio: 260 / 183;
     }
 

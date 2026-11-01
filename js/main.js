@@ -1,13 +1,13 @@
 // ハンバーガーメニュー開く、閉じる
 $("#js-hamburger").click(function() {
   $(".hamburger").toggleClass("is-active");
-  $(".p-header__menu").toggleClass("is-open");
+  $(".l-header__nav").toggleClass("is-open");
 });
 
 // メニュー項目選択時,元に戻す（クラス強制的に外す）
-$(".p-header__menu a").click(function() {
+$(".l-header__nav a").click(function() {
   $(".hamburger").removeClass("is-active");
-  $(".p-header__menu").removeClass("is-open");
+  $(".l-header__nav").removeClass("is-open");
 });
  
 // swiperでスライドさせる
@@ -40,11 +40,11 @@ const voiceSwiper = new Swiper(".p-top-voice__swiper", {
 });
 
 // スライドで、一番最初の記事をとって、最後に移動
-$(".p-top-voice__next").click(function() {
-  const firstItem = $(".p-top-voice__item").first();
+// $(".p-top-voice__next").click(function() {
+//   const firstItem = $(".p-top-voice__item").first();
 
-  $(".p-top-voice__swiper-wrapper").append(firstItem);
-});
+//   $(".p-top-voice__swiper-wrapper").append(firstItem);
+// });
 
 // アコーディオンの開閉
 $(".p-top-faq__question, .p-top-faq__answer").on("click", function() {
@@ -57,11 +57,10 @@ $(".p-top-faq__question, .p-top-faq__answer").on("click", function() {
 
   $question.toggleClass("is-open");
 
-  if ($(this).hasClass("is-open")) {
-    $arrow.attr("src", "./img/faq-up-arrow.svg");
-  } else {
-    $arrow.attr("src", "./img/faq-down-arrow.svg");
-  }
+  $arrow.toggleClass(
+    "is-open",
+    $(this).hasClass("is-open")
+  );
 });
 
 //ページトップへ戻るボタンの表示、非表示

@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>きたむらミュージックスクール</title>
-    <meta name="description" content="「音楽で生きる」を叶える ミュージックスクール「きたむらミュージックスクール」の公式ホームページです。">
+    <title>卒業実績｜きたむらミュージックスクール</title>
+    <meta name="description" content="「きたむらミュージックスクール」の卒業実績一覧ページです。">
     <link rel="icon" href="./img/main-logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="container">
@@ -15,7 +19,7 @@
     <header class="header">
       <div class="l-header">
         <div class="l_inner p-header">
-          <h1 class="p-header__logo">
+          <div class="p-header__logo">
             <a href="./index.html" class="p-header__main-logo">
               <span class="p-header__main-logo-image">
                 <img src="./img/main-logo.svg" alt="きたむらミュージックスクールのロゴ">
@@ -25,11 +29,11 @@
                 <span class="p-header__main-logo-school">ミュージックスクール</span>
               </span>
             </a>
-          </h1>
+          </div>
 
-          <!-- pcナビ -->
-          <div class="p-header__right">
-            <ul class="p-header__nav">
+          <!-- ヘッダーナビ -->
+          <nav class="l-header__nav" aria-label="ヘッダーナビゲーション">
+            <ul>
               <li>
                 <a href="plan.html">料金</a>  
               </li>
@@ -41,24 +45,7 @@
               </li>
             </ul>
             <a href="contact-form.html" class="p-header__contact">お問い合わせ</a>
-          </div>
-
-          <!-- ハンバーガーナビゲーション -->
-          <div class="p-header__menu">
-            <nav>
-              <ul>
-                <li>
-                  <a href="plan.html">料金</a>
-                </li>
-                <li>
-                  <a href="blog-list.html">ブログ</a>
-                </li>
-                <li>
-                  <a href="result-list.html">卒業実績</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          </nav>
         </div>
 
         <!-- ハンバーガーボタン -->
@@ -109,10 +96,10 @@
                   <img src="./img/result01.jpg" alt="マイクで歌を歌う男性">
                 </div>
                 <div class="p-result-list__item-textarea">
-				  <div class="p-result-list__item-title">
-					<h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
-				  </div>
-				  <p class="p-result-list__item-date">0000.00.00</p>
+                  <div class="p-result-list__item-title">
+                    <h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+                  </div>
+                  <p class="p-result-list__item-date">0000.00.00</p>
                 </div>
               </a>
 
@@ -122,10 +109,10 @@
                   <img src="./img/result02.jpg" alt="犬を可愛がる女性">
                 </div>
                 <div class="p-result-list__item-textarea">
-				  <div class="p-result-list__item-title">
-					<h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
-				  </div>
-				  <p class="p-result-list__item-date">0000.00.00</p>
+                  <div class="p-result-list__item-title">
+                    <h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+                  </div>
+                  <p class="p-result-list__item-date">0000.00.00</p>
                 </div>
               </a>
 
@@ -135,10 +122,10 @@
                   <img src="./img/result03.jpg" alt="ギターを弾く男性">
                 </div>
                 <div class="p-result-list__item-textarea">
-				  <div class="p-result-list__item-title">
-					<h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
-				  </div>
-				  <p class="p-result-list__item-date">0000.00.00</p>
+                  <div class="p-result-list__item-title">
+                    <h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+                  </div>
+                  <p class="p-result-list__item-date">0000.00.00</p>
                 </div>
               </a>
 
@@ -148,10 +135,10 @@
                   <img src="./img/result04.jpg" alt="ギターを弾く女性">
                 </div>
                 <div class="p-result-list__item-textarea">
-				  <div class="p-result-list__item-title">
-					<h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
-				  </div>
-				  <p class="p-result-list__item-date">0000.00.00</p>
+                  <div class="p-result-list__item-title">
+                    <h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+                  </div>
+                  <p class="p-result-list__item-date">0000.00.00</p>
                 </div>
               </a>
 
@@ -161,10 +148,10 @@
                   <img src="./img/result05.jpg" alt="楽しそうに歌う女性">
                 </div>
                 <div class="p-result-list__item-textarea">
-				  <div class="p-result-list__item-title">
-					<h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
-				  </div>
-				  <p class="p-result-list__item-date">0000.00.00</p>
+                  <div class="p-result-list__item-title">
+                    <h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+                  </div>
+                  <p class="p-result-list__item-date">0000.00.00</p>
                 </div>
               </a>
 
@@ -174,10 +161,10 @@
                   <img src="./img/result06.jpg" alt="ギターを持つ女性">
                 </div>
                 <div class="p-result-list__item-textarea">
-				  <div class="p-result-list__item-title">
-					<h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
-				  </div>
-				  <p class="p-result-list__item-date">0000.00.00</p>
+                  <div class="p-result-list__item-title">
+                    <h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+                  </div>
+                  <p class="p-result-list__item-date">0000.00.00</p>
                 </div>
               </a>
 
@@ -187,10 +174,10 @@
                   <img src="./img/result07.jpg" alt="ステージの上で歌を歌う男性">
                 </div>
                 <div class="p-result-list__item-textarea">
-				  <div class="p-result-list__item-title">
-					<h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
-				  </div>
-				  <p class="p-result-list__item-date">0000.00.00</p>
+                  <div class="p-result-list__item-title">
+                    <h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+                  </div>
+                  <p class="p-result-list__item-date">0000.00.00</p>
                 </div>
               </a>
 
@@ -200,10 +187,10 @@
                   <img src="./img/result08.jpg" alt="サックスを持つ女性">
                 </div>
                 <div class="p-result-list__item-textarea">
-				  <div class="p-result-list__item-title">
-					<h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
-				  </div>
-				  <p class="p-result-list__item-date">0000.00.00</p>
+                  <div class="p-result-list__item-title">
+                    <h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+                  </div>
+                  <p class="p-result-list__item-date">0000.00.00</p>
                 </div>
               </a>
 
@@ -213,10 +200,10 @@
                   <img src="./img/result09.jpg" alt="ヘッドホンを着けている女性">
                 </div>
                 <div class="p-result-list__item-textarea">
-				  <div class="p-result-list__item-title">
-					<h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
-				  </div>
-				  <p class="p-result-list__item-date">0000.00.00</p>
+                  <div class="p-result-list__item-title">
+                    <h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+                  </div>
+                  <p class="p-result-list__item-date">0000.00.00</p>
                 </div>
               </a>
 
@@ -226,10 +213,10 @@
                   <img src="./img/result10.jpg" alt="フルートを吹く女性">
                 </div>
                 <div class="p-result-list__item-textarea">
-				  <div class="p-result-list__item-title">
-					<h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
-				  </div>
-				  <p class="p-result-list__item-date">0000.00.00</p>
+                  <div class="p-result-list__item-title">
+                    <h3>タイトルが入ります。タイトルが入ります。タイトルが入ります。</h3>
+                  </div>
+                  <p class="p-result-list__item-date">0000.00.00</p>
                 </div>
               </a>
  
@@ -247,16 +234,15 @@
           </div>
         </section>
 
-        <!-- ページトップへ戻るボタン -->
-		<div class="p-fixed-buttons">
-		  <a href="#top" class="p-fixed-buttons__top">
-			<img src="./img/top-button.svg" alt="ページトップへ戻るボタン">
-		  </a>
-		  <a href="contact-form.html" class="c-contact-btn">
-			お問い合わせ
-		  </a>
-		</div>
-
+            <!-- ページトップへ戻るボタン -->
+        <div class="p-fixed-buttons">
+          <a href="#top" class="p-fixed-buttons__top">
+          <img src="./img/top-button.svg" alt="ページトップへ戻るボタン">
+          </a>
+          <a href="contact-form.html" class="c-contact-btn">
+          お問い合わせ
+          </a>
+        </div>
       </div>
     </main>
 
@@ -325,7 +311,6 @@
 
   </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>

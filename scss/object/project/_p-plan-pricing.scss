@@ -10,7 +10,7 @@
 
   &__title {
     font-size: 2.5rem;
-    line-height: (38 / 25);
+    line-height: calc(38 / 25);
     font-weight: 700;
     text-align: center;
     margin-bottom: 4rem;
