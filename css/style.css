@@ -1780,11 +1780,8 @@ img {
 }
 @media (max-width: 767px) {
   .p-top-blog__items {
+    grid-template-columns: repeat(1, 1fr);
     row-gap: 4.1rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 .p-top-blog__item {
@@ -1938,6 +1935,7 @@ img {
   -webkit-column-gap: 1.25rem;
      -moz-column-gap: 1.25rem;
           column-gap: 1.25rem;
+  padding-bottom: 4.9rem;
 }
 @media (max-width: 767px) {
   .footer__sns ul {
