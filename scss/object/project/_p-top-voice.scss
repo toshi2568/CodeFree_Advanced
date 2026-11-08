@@ -43,6 +43,11 @@
     &:hover {
       opacity: 0.7;
       cursor: pointer;
+      .p-top-voice__image {
+        img {
+          transform: scale(1.1);
+        }
+      }
     }
 
     img {
@@ -50,6 +55,7 @@
       display: block;
       aspect-ratio: 270 / 190;
       object-fit: cover;
+      transition: transform 0.4s ease;
 
       &:hover {
         transform: scale(1.1);

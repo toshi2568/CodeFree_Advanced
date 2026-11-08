@@ -14,15 +14,26 @@
   &__header-inner {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.6rem;
   }
 
   &__header-text {
     font-size: 1.8rem;
     line-height: calc(30 / 18);
+    min-width: 0;
+    overflow-wrap: anywhere;
 
     span {
       font-weight: 700;
     }
+  }
+
+  &__header-count {
+    font-size: 1.8rem;
+    line-height: calc(30 / 18);
+    flex-shrink: 0;
+    white-space: nowrap;
   }
 
   &__list {
@@ -64,16 +75,19 @@
   &__item-image {
     position: relative;
     width: 26rem;
+    aspect-ratio: 260 / 184;
+
+    @include sp {
+      width: 100%;
+      aspect-ratio: 335 / 200;
+      margin-bottom: 3.2rem;
+    }
 
     img {
+      display: block;
       width: 100%;
       height: 100%;
-      aspect-ratio: 260 / 184;
-
-      @include sp {
-        aspect-ratio: 335 / 200;
-        margin-bottom: 3.2rem;
-      }
+      object-fit: cover;
     }
   }
 

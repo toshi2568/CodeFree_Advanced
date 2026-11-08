@@ -92,11 +92,11 @@
     td {
       border: 0.5px solid #707070;
       font-size: 1.8rem;
-      padding: 0.75rem 2rem 0 2rem;
+      padding: 0rem 2rem;
       vertical-align: middle;
 
       @include sp {
-        padding: 0.75rem 1rem 0 1rem;
+        padding: 0rem 1rem;
       }
     }
 
