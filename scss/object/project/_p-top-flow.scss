@@ -2,7 +2,7 @@
 @use '../../foundation/mixin' as *;
 
 .p-top-flow {
-  padding: 3.4rem 0 8.9rem;
+  padding: 3.4rem 0 10.5rem;
   
   @include sp {
     padding: 4.6rem 2rem 3rem;
@@ -29,14 +29,14 @@
     display: flex;
     flex-direction: column;
     margin-left: 5.2rem;
-    row-gap: 4rem;
+    row-gap: 5.8rem;
 
     &::before {
       content: "";
       position: absolute;
       top: 1rem;
-      bottom: 0rem;
-      left: 0.9rem;
+      bottom: -1.3rem;
+      left: 0.85rem;
       width: 0.3rem;
       background-color: $color-red;
 
@@ -48,7 +48,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: -1.2rem;
       left: 1rem;
       width: 2.5rem;
       height: 2.5rem;
@@ -91,7 +91,6 @@
     font-size: 2.2rem;
     line-height: calc(33 / 22);
     font-weight: 700;
-    margin-bottom: 4.5rem;
     color: $color-red;
     white-space: nowrap;
 

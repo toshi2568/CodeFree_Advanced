@@ -32,6 +32,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: opacity 0.4s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
 
     @include sp {
       height: 22.8rem;
@@ -212,6 +217,11 @@
     display: block;
     font-size: 1.7rem;
     line-height: calc(28 / 17);
-    padding: 1.2rem 0 0.6rem 0;  
+    padding: 1.2rem 0 0.6rem 0;
+    transition: opacity 0.4s ease;
+    
+    &:hover {
+      opacity: 0.6;
+    } 
   }
 }
