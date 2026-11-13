@@ -89,25 +89,25 @@
 //   opacity: 0.7;
 // }
 
-.page-contact {
-  .p-fixed-buttons {
-    right: calc((100% - 88rem) / 2);
+// .page-contact {
+//   .p-fixed-buttons {
+//     right: calc((100% - 88rem) / 2);
 
-    @include sp {
-      right: max(0px, calc((100% - 500px) / 2) + 2rem);
-      width: auto;
-      padding-inline: 0;
-    }
-  }
+//     @include sp {
+//       right: max(0px, calc((100% - 500px) / 2) + 2rem);
+//       width: auto;
+//       padding-inline: 0;
+//     }
+//   }
 
-  .p-fixed-buttons__top {
-    margin-right: 0rem;
+//   .p-fixed-buttons__top {
+//     margin-right: 0rem;
 
-    @include sp {
-      margin-right: 3rem;
-    }
-  }
-}
+//     @include sp {
+//       margin-right: 3rem;
+//     }
+//   }
+// }
 
 .c-home-button  {
   a {

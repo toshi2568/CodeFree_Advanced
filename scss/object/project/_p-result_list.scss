@@ -20,7 +20,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10.6rem;
-    row-gap: 6.1rem;
+    row-gap: 6.9rem;
     margin-bottom: 7.1rem;
 
     @include sp {
@@ -36,9 +36,9 @@
       opacity: 0.7;
     }
 
-    &:nth-child(n + 5) {
-      margin-top: 1rem;
-    }
+    // &:nth-child(n + 5) {
+    //   margin-top: 1rem;
+    // }
 
     @include sp {
       &:hover {
